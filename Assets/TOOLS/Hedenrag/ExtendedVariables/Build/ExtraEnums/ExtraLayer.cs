@@ -24,6 +24,11 @@ namespace Hedenrag
                 this.layer = layer;
                 value = val;
             }
+            public ExtraLayer(ExLayer layer)
+            {
+                this.layer = layer;
+                value = 0;
+            }
 
             public ExtraLayer(ExtraLayer layer)
             {
@@ -36,6 +41,10 @@ namespace Hedenrag
                 int res = layers.Value & value;
                 return res != 0;
             }
+
+
+            public static bool operator ==(ExtraLayer left, ExtraLayer right) { return (left.layer == right.layer && left.value == right.value); }
+            public static bool operator !=(ExtraLayer left, ExtraLayer right) { return !(left == right); }
         }
     }
 }

@@ -11,9 +11,17 @@ public class Robable : MonoBehaviour
     public List<Objeto> objetos;
 
     public ExtraLayers posibilidades;
-    
+
+    Optional<List<string>> infoList;
+    [SerializeField] ExtraLayer investigateLayer;
+
+    private void Awake()
+    {
+        investigateLayer = new ExtraLayer(posibilidades.Layer, 1);
+    }
     public void CreateSelection()
     {
+        if(infoList)
         ClickManager.instance.Value.SetOptions(this);
     }
 }

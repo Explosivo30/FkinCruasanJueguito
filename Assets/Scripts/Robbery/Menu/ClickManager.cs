@@ -36,4 +36,23 @@ public class ClickManager : MonoBehaviour
             options[i].SetActive(sr.posibilidades[i]);
         }
     }
+
+    #region
+
+    public void Investigar()
+    {
+
+    }
+
+    public void Hurtar()
+    {
+
+    }
+
+    public void Atracar()
+    {
+
+    }
+
+    #endregion
 }

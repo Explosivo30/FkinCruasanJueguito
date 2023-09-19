@@ -12,6 +12,7 @@ namespace Hedenrag
         {
             [SerializeField, HideInInspector] ExLayer layer;
             [SerializeField, HideInInspector] int value;
+            public ExLayer Layer => layer;
             public int Value => value;
 
             void OnValidate() { }
