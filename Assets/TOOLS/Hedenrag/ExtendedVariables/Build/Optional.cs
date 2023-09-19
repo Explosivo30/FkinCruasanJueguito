@@ -15,7 +15,6 @@ namespace Hedenrag
         {
             [SerializeField] private bool enabled;
             [SerializeField] private T value;
-
             public Optional(T value, bool enabled = true) : this()
             {
                 this.enabled = enabled;

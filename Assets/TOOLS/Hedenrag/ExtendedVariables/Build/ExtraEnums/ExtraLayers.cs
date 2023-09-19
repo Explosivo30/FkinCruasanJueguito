@@ -24,6 +24,21 @@ namespace Hedenrag
                 value = val;
             }
 
+            public bool GetLayer(int index)
+            {
+                return (value & (1 << index)) != 0;
+            }
+            public void SetLayer(int index, bool val)
+            {
+                value |= (1 << index);
+            }
+
+            public bool this[int index]
+            {
+                get => GetLayer(index);
+                set => SetLayer(index, value);
+            }
+
             public static ExtraLayers operator &(ExtraLayers a, ExtraLayers b)
             {
                 return new ExtraLayers(a.layer, a.value & b.value);
