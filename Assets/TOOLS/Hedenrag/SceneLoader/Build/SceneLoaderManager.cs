@@ -39,8 +39,6 @@ namespace Hedenrag
                         writer.Write(scenes);
                     }
                 }
-                UnityEditor.AssetDatabase.Refresh();
-
             }
 #endif
             const string savePath = "SceneLoader/NeverUnloadingScenes";
