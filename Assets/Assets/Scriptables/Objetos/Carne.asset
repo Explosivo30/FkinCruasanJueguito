@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5857dac28db492044ac6f627161aaf4d, type: 3}
-  m_Name: Reloj
+  m_Name: Carne
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 7e63758944b706f4094d5bb088498d28, type: 3}
-  buyPrice: 200
-  sellPrice: 50
+  image: {fileID: 21300000, guid: 5d4360b41e9fc32419ad583c74d6fc4f, type: 3}
+  buyPrice: 0
+  sellPrice: 0
   capacidades:
     enabled: 0
     value: []
   ruido: 0
-  probabilidadDeRobar: 80
+  probabilidadDeRobar: 0

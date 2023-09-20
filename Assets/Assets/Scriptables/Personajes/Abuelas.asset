@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d2c0c1ed4fc8da4fbfe8e1985a7ec84, type: 3}
+  m_Name: Abuelas
+  m_EditorClassIdentifier: 
+  nombres:
+  - Paquita
+  - Rosita
+  - Conchi
+  - MraDelfina
+  - Maria
+  - Mercedes
+  - Rosario
+  - MariCarmen
+  - Dolores
+  - Angustias
+  - Esperanza
+  numeroDeObjetos:
+    currentVal: 0
+    minVal: 1
+    maxVal: 4
+  poolDeObjetos:
+  - {fileID: 11400000, guid: 277277f423226644f98fbe20f14cc06d, type: 2}
+  - {fileID: 11400000, guid: e007790caa2e595498d93f4314af9782, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  numeroDePeligros:
+    currentVal: 0
+    minVal: 0
+    maxVal: 0
+  poolDePeligros: []
+  charactersPrefabs: []

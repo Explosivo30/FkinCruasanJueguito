@@ -9,6 +9,8 @@ public class Objeto : ScriptableObject
     public Sprite image;
     public int buyPrice;
     public int sellPrice;
+    public int sellAmount;
+    public float peso; 
     public Optional<List<Requerimiento>> capacidades;
     [Range(0f, 100f)] public float ruido;
     [Range(0f, 100f)] public float probabilidadDeAlarma;
