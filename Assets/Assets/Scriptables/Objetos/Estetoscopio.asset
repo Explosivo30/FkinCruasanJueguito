@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Estetoscopio
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: ace1fdfce9c50cc43bce37057a55a8a4, type: 3}
-  buyPrice: 0
-  sellPrice: 0
+  buyPrice: 50
+  sellPrice: 25
+  sellAmount: 0
+  peso: 1
   capacidades:
     enabled: 0
     value: []

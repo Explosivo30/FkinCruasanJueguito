@@ -9,7 +9,7 @@ public class BaseAgent : MonoBehaviour
 
     public static int ActiveAgents => agentPool;
     static int agentPool = 0;
-    public const int maxAgentsPool = 20;
+    public const int maxAgentsPool = 40;
     // Start is called before the first frame update
     void Awake()
     {

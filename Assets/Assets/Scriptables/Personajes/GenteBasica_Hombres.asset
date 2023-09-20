@@ -36,6 +36,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c223639356648b242ae758ce6ad15f2d, type: 2}
   - {fileID: 11400000, guid: 851f53219cd7ec3419adca3ed2d1f42f, type: 2}
   - {fileID: 11400000, guid: 1655b11763a9a574e8f7d1816d74a539, type: 2}
+  - {fileID: 11400000, guid: 3d5dea33cfa84e34ea5b1160f1c8f22d, type: 2}
   numeroDePeligros:
     currentVal: 0
     minVal: 0
@@ -47,5 +48,3 @@ MonoBehaviour:
   - {fileID: 50513943383456601, guid: d6a38a4151b412b4fa69b4c49fd329e6, type: 3}
   - {fileID: 6317026816922989141, guid: e99168013ffccd8428885ce4bef29c15, type: 3}
   - {fileID: 1658770814596561051, guid: b3c0f03dba3591f42bd7dc7bac852a12, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}

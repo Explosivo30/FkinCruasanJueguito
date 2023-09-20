@@ -14,9 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: b0a6633697a32414aa2bfb96b97eeef1, type: 3}
   buyPrice: 0
-  sellPrice: 0
+  sellPrice: 25
+  sellAmount: 0
+  peso: 1
   capacidades:
     enabled: 0
     value: []
   ruido: 0
+  probabilidadDeAlarma: 0
   probabilidadDeRobar: 0

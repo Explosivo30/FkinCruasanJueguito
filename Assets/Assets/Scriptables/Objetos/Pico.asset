@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Pico
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 64736d5feb810f546a575d678b2e52c0, type: 3}
-  buyPrice: 0
-  sellPrice: 0
+  buyPrice: 60
+  sellPrice: 35
+  sellAmount: 0
+  peso: 2
   capacidades:
     enabled: 0
     value: []

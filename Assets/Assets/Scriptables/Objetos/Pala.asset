@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Pala
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: cadfdd440a443f941b88ba411735f2e4, type: 3}
-  buyPrice: 0
-  sellPrice: 0
+  buyPrice: 40
+  sellPrice: 25
+  sellAmount: 0
+  peso: 3
   capacidades:
     enabled: 0
     value: []

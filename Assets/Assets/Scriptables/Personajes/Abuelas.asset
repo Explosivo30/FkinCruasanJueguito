@@ -31,16 +31,18 @@ MonoBehaviour:
   poolDeObjetos:
   - {fileID: 11400000, guid: 277277f423226644f98fbe20f14cc06d, type: 2}
   - {fileID: 11400000, guid: e007790caa2e595498d93f4314af9782, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 59610d9f6e6556f4fb476952ba8fe23b, type: 2}
+  - {fileID: 11400000, guid: b70a1d7676ef9234bbf42ade437ee7bc, type: 2}
+  - {fileID: 11400000, guid: c8480005c75c45042a466e82fa926c5d, type: 2}
+  - {fileID: 11400000, guid: 54791de9d956f4b4c83a17ec3ab0a926, type: 2}
+  - {fileID: 11400000, guid: 31d4c716a44850243a2ac3b8cacb59b1, type: 2}
+  - {fileID: 11400000, guid: bb14530428cda7b43a0c0860e40903cd, type: 2}
+  - {fileID: 11400000, guid: bf24a9c33a51f5d4cacb86fcacdec8d5, type: 2}
+  - {fileID: 11400000, guid: d829b846794777e4cb6c6e03220da742, type: 2}
   numeroDePeligros:
     currentVal: 0
     minVal: 0
     maxVal: 0
   poolDePeligros: []
-  charactersPrefabs: []
+  charactersPrefabs:
+  - {fileID: 325727104875203014, guid: 35f01254e15466643ba768ab25e6f166, type: 3}

@@ -12,15 +12,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d2c0c1ed4fc8da4fbfe8e1985a7ec84, type: 3}
   m_Name: Mafiosos
   m_EditorClassIdentifier: 
-  nombres: []
+  nombres:
+  - Fabrizzio
+  - Richi
+  - Rigoberto
+  - Alesandro
+  - Federico
+  - Donatelo
+  - Miguelangelo
+  - Franchesco
+  - Roberto
   numeroDeObjetos:
     currentVal: 0
-    minVal: 0
-    maxVal: 0
-  poolDeObjetos: []
+    minVal: 3
+    maxVal: 5
+  poolDeObjetos:
+  - {fileID: 11400000, guid: c223639356648b242ae758ce6ad15f2d, type: 2}
+  - {fileID: 11400000, guid: bf24a9c33a51f5d4cacb86fcacdec8d5, type: 2}
+  - {fileID: 11400000, guid: ad7bf65e5bdbb9a48ae846f25d379d27, type: 2}
+  - {fileID: 11400000, guid: ff9ae0ef5846ec14b9aa35abe1fe1338, type: 2}
+  - {fileID: 11400000, guid: ff9ae0ef5846ec14b9aa35abe1fe1338, type: 2}
+  - {fileID: 11400000, guid: ff9ae0ef5846ec14b9aa35abe1fe1338, type: 2}
+  - {fileID: 11400000, guid: b70a1d7676ef9234bbf42ade437ee7bc, type: 2}
+  - {fileID: 11400000, guid: 90c07666ca6863446b6b46c620a94d56, type: 2}
+  - {fileID: 11400000, guid: 90c07666ca6863446b6b46c620a94d56, type: 2}
+  - {fileID: 11400000, guid: 2fe6dcc7937528c4ea8cb40b41978980, type: 2}
+  - {fileID: 11400000, guid: 997f4cbf0c2b9134384f48f6f93ce6f4, type: 2}
+  - {fileID: 11400000, guid: 997f4cbf0c2b9134384f48f6f93ce6f4, type: 2}
+  - {fileID: 11400000, guid: caad118c1a67a4b4f9a40ca7aae93da3, type: 2}
+  - {fileID: 11400000, guid: f919d955909188a4b8ef606d6961b481, type: 2}
+  - {fileID: 11400000, guid: 3d5dea33cfa84e34ea5b1160f1c8f22d, type: 2}
   numeroDePeligros:
     currentVal: 0
     minVal: 0
     maxVal: 0
   poolDePeligros: []
-  charactersPrefabs: []
+  charactersPrefabs:
+  - {fileID: 9126719260156392351, guid: 81b6f775644e85e48a78711dea9c9b9d, type: 3}
+  - {fileID: 477947361664610888, guid: cd7eb587ef4d2a547b0d059707b53d35, type: 3}

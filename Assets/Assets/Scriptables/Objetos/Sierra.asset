@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Sierra
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: ef853b88ec28afb459dbe5f21bcafb89, type: 3}
-  buyPrice: 0
-  sellPrice: 0
+  buyPrice: 70
+  sellPrice: 34
+  sellAmount: 0
+  peso: 1
   capacidades:
     enabled: 0
     value: []

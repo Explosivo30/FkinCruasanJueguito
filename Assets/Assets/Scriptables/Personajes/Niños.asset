@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d2c0c1ed4fc8da4fbfe8e1985a7ec84, type: 3}
+  m_Name: "Ni\xF1os"
+  m_EditorClassIdentifier: 
+  nombres:
+  - Alex
+  - Carlos
+  - Pedro
+  - Tony
+  - Mario
+  - Jimmy
+  - Timmy
+  numeroDeObjetos:
+    currentVal: 0
+    minVal: 1
+    maxVal: 3
+  poolDeObjetos:
+  - {fileID: 11400000, guid: 80bcc8f7008ba14448001c821f6d65a7, type: 2}
+  - {fileID: 11400000, guid: 8ec266a726b570e4ab305d3c7862e2e2, type: 2}
+  - {fileID: 11400000, guid: 1e2f6ce70297ad4458a4cecad337fa5c, type: 2}
+  - {fileID: 11400000, guid: 1e2f6ce70297ad4458a4cecad337fa5c, type: 2}
+  - {fileID: 11400000, guid: c8480005c75c45042a466e82fa926c5d, type: 2}
+  - {fileID: 11400000, guid: c223639356648b242ae758ce6ad15f2d, type: 2}
+  - {fileID: 11400000, guid: 8f384810bd8202d42942d0d24153c3cc, type: 2}
+  - {fileID: 11400000, guid: dda5d1c769bc2184590a754b6f01c496, type: 2}
+  - {fileID: 11400000, guid: dce6bccab5f6bd14391d579c0c493845, type: 2}
+  numeroDePeligros:
+    currentVal: 0
+    minVal: 0
+    maxVal: 0
+  poolDePeligros: []
+  charactersPrefabs:
+  - {fileID: 6322863221894934657, guid: df1ec5bece8523f4ab0f24cb5972941a, type: 3}

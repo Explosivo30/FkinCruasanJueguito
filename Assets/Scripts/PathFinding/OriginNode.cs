@@ -10,7 +10,7 @@ public class OriginNode : MonoBehaviour
     static List<OriginNode> originNodes = new List<OriginNode>();
     int myId;
     //TODO add npc pool scriptable singleton
-    const float spawnRate = 2.5f;
+    const float spawnRate = 0.2f;
 
     static bool og = false;
 
