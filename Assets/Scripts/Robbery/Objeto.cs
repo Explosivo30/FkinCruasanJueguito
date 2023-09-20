@@ -11,5 +11,6 @@ public class Objeto : ScriptableObject
     public int sellPrice;
     public Optional<List<Requerimiento>> capacidades;
     [Range(0f, 100f)] public float ruido;
+    [Range(0f, 100f)] public float probabilidadDeAlarma;
     [Range(0f, 100f)] public float probabilidadDeRobar;
 }

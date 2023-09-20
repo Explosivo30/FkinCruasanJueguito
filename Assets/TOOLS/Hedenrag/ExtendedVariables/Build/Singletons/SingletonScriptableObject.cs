@@ -1,14 +1,16 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.Runtime.CompilerServices;
 using UnityEditor;
-using UnityEditor.PackageManager.UI;
 using UnityEngine;
 
 namespace Hedenrag
 {
     namespace ExVar
     {
-        public class SingletonScriptableObject<T> : ScriptableObject where T : SingletonScriptableObject<T>
+        public class SingletonScriptableObject<T> : ScriptableObject where T : SingletonScriptableObject<T>, ICallOnAll
         {
             private static T instance;
             public static T Instance
@@ -17,16 +19,17 @@ namespace Hedenrag
                 {
                     if (instance == null)
                     {
-                        T[] assets = Resources.LoadAll<T>("");
+                        T[] assets = Resources.LoadAll<T>("Singletons");
                         if (assets == null || assets.Length < 1)
                         {
 #if UNITY_EDITOR
-                            GenerateSingletons();
-                            assets = Resources.LoadAll<T>("");
+                            GenerateSingleton();
+                            assets = Resources.LoadAll<T>("Singletons");
                             if (assets == null || assets.Length < 1)
                             {
                                 throw new System.Exception("could not generate automaticaly singleton");
                             }
+                            Debug.Log("Generated singleton automatically");
 #else
                     throw new System.Exception("Could not find any singleton scriptable object instances in the resources!");
 #endif
@@ -36,19 +39,24 @@ namespace Hedenrag
                             Debug.LogWarning(assets.Length + " instances of the singleton scriptable object found in cesources, using this", assets[0]);
                             instance = assets[0];
                         }
+                        else
+                        {
+                            instance = assets[0];
+                        }
                     }
                     return instance;
                 }
             }
 
 #if UNITY_EDITOR
-            public static void GenerateSingletons()
+            public static void GenerateSingleton()
             {
+                //should add a creation of the folder with System.IO
                 string path = "Assets/Resources/Singletons/";
 
                 Debug.Log(typeof(T));
-
-                if (instance != null) { return; }
+                T[] assets = Resources.LoadAll<T>("");
+                if (!(assets == null || assets.Length < 1)) { Debug.Log("found Instance"); return; }
 
                 if (typeof(T).IsSubclassOf(typeof(SingletonScriptableObject<T>)))
                 {
@@ -61,7 +69,51 @@ namespace Hedenrag
                     Selection.activeObject = a;
                 }
             }
+            
+
+            protected static void GenerateAllSingletons()
+            {
+                ICallOnAll.CallOnAll("GenerateSingleton");
+                //List<SingletonScriptableObject<T>> objects = new List<SingletonScriptableObject<T>>();
+                //foreach (Type type in
+                //    Assembly.GetAssembly(typeof(T)).GetTypes()
+                //    .Where(myType => myType.IsClass && !myType.IsAbstract && myType.IsSubclassOf(typeof(SingletonScriptableObject<T>))))
+                //{
+                //    MethodInfo generateMethod = type.GetMethod("GenerateSingleton", BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy);
+                //    if (generateMethod != null)
+                //        generateMethod.Invoke(null, null);
+                //    else
+                //        Debug.Log("Method is null");
+                //}
+            }
 #endif
         }
+
+        public interface ICallOnAll
+        {
+            public static void CallOnAll(string methodName)
+            {
+                foreach (Assembly asm in AppDomain.CurrentDomain.GetAssemblies())
+                {
+                    foreach (Type type in GetAllImplemented(asm))
+                    {
+                        Debug.Log(type);
+                        MethodInfo generateMethod = type.GetMethod(methodName, BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy);
+                        if (generateMethod != null)
+                            generateMethod.Invoke(null, null);
+                        else
+                            Debug.Log("Method is null");
+                    }
+                }
+            }
+
+            static IEnumerable<Type> GetAllImplemented(Assembly asm)
+            {
+                return  from type in asm.GetTypes()
+                        where typeof(ICallOnAll).IsAssignableFrom(type)
+                        select type;
+            }
+        }
+        
     }
 }

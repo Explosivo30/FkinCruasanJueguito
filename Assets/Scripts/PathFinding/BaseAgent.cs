@@ -14,18 +14,16 @@ public class BaseAgent : MonoBehaviour
     void Awake()
     {
         agentPool++;
+        mNavMeshAgent = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!mNavMeshAgent.pathPending)
+        if (mNavMeshAgent.remainingDistance <= mNavMeshAgent.stoppingDistance)
         {
-            if (mNavMeshAgent.remainingDistance <= mNavMeshAgent.stoppingDistance)
-            {
-                Destroy(gameObject);
-                agentPool--;
-            }
+            Destroy(gameObject);
+            agentPool--;
         }
     }
 }

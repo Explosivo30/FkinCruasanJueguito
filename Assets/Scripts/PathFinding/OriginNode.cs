@@ -1,38 +1,47 @@
 using Hedenrag.ExVar;
 using System.Collections;
 using System.Collections.Generic;
-using System.Timers;
 using UnityEngine;
 using UnityEngine.AI;
+
 
 public class OriginNode : MonoBehaviour
 {
     static List<OriginNode> originNodes = new List<OriginNode>();
     int myId;
     //TODO add npc pool scriptable singleton
+    const float spawnRate = 2.5f;
 
-    static Optional<OriginCreator> og = new(null, false);
-
-    [SerializeField] GameObject testPrefab;
+    static bool og = false;
 
     private void Awake()
     {
         myId = originNodes.Count;
         originNodes.Add(this);
 
-        if(!og) og = new(new(), true);
+        if (!og)
+        {
+            CoroutineWait.DoAfterSeconds(action: RepeatInvokeCreateNPCs, time: spawnRate);
+            og = true;
+        }
+    }
+    static void RepeatInvokeCreateNPCs()
+    {
+        CreateNPC();
+        CoroutineWait.DoAfterSeconds(action: RepeatInvokeCreateNPCs, time: spawnRate);
     }
 
-    public void CreateNPC()
+    public static void CreateNPC()
     {
-        GameObject g = Instantiate(testPrefab);
+        int ogIndex = Random.Range(0, originNodes.Count - 1);
+        GameObject g = NPCPool.Instance.CreateNPC(originNodes[ogIndex].transform);
+        g.transform.parent = null;
         NavMeshAgent agent = g.GetComponent<NavMeshAgent>();
-        int index = Random.Range(0, originNodes.Count-2);
-        if (index >= myId)
-        {
-            index++;
-        }
-        agent.SetDestination(originNodes[index].transform.position);
+
+        int destIndex = Random.Range(0, originNodes.Count - 2);
+        if (destIndex >= ogIndex) destIndex++;
+
+        agent.SetDestination(originNodes[destIndex].transform.position);
     }
 
     void OnDestroy()
@@ -45,30 +54,4 @@ public class OriginNode : MonoBehaviour
     }
 
 
-    class OriginCreator
-    {
-        Timer timer;
-
-        public OriginCreator()
-        {
-            Create();
-        }
-
-        void Create()
-        {
-            timer = new Timer();
-            timer.Interval = 2500;
-            timer.Start();
-            timer.Elapsed += UpdateLoop;
-        }
-
-        private void UpdateLoop(object sender, ElapsedEventArgs e)
-        {
-            if(BaseAgent.ActiveAgents < BaseAgent.maxAgentsPool)
-            {
-                originNodes[Random.Range(0, originNodes.Count-1)].CreateNPC();
-            }
-            Create();
-        }
-    }
 }

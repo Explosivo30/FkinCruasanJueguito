@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Hedenrag.ExVar;
 
+[CreateAssetMenu(fileName = "newPeligro", menuName = "Scriptable Objects/Robbery Game/new Peligro")]
 public class Peligro : ScriptableObject
 {
     public enum FacilidadEscape{ escapeLibre, escapeSinObjetos, NoHayEscape}

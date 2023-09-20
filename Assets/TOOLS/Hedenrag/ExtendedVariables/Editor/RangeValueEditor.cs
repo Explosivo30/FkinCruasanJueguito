@@ -11,12 +11,6 @@ namespace Hedenrag
     [CustomPropertyDrawer(typeof(RangeIntValue))]
     public class RangeValueEditor : PropertyDrawer
     {
-        public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
-        {
-            var valueProperty = property.FindPropertyRelative("minVal");
-            return EditorGUI.GetPropertyHeight(valueProperty);
-        }
-
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
             //base.OnGUI(position, property, label);
@@ -25,9 +19,20 @@ namespace Hedenrag
             var maxValProperty = property.FindPropertyRelative("maxVal");
             var currentValProperty = property.FindPropertyRelative("currentVal");
 
-            if (minValProperty.floatValue > maxValProperty.floatValue)
+            
+            if(minValProperty.boxedValue is int)
             {
-                (minValProperty.floatValue, maxValProperty.floatValue) = (maxValProperty.floatValue, minValProperty.floatValue);
+                if (minValProperty.intValue > maxValProperty.intValue)
+                {
+                    (minValProperty.intValue, maxValProperty.intValue) = (maxValProperty.intValue, minValProperty.intValue);
+                }
+            }
+            else
+            {
+                if (minValProperty.floatValue > maxValProperty.floatValue)
+                {
+                    (minValProperty.floatValue, maxValProperty.floatValue) = (maxValProperty.floatValue, minValProperty.floatValue);
+                }
             }
 
             EditorGUIUtility.labelWidth = 58f;
@@ -37,10 +42,7 @@ namespace Hedenrag
             position.width /= 2f;
             EditorGUI.LabelField(position, label);
             position.x += position.width;
-            EditorGUI.BeginDisabledGroup(true);
-            EditorGUI.PropertyField(position,  currentValProperty, GUIContent.none, false);
-            EditorGUI.EndDisabledGroup();
-
+            //can addStuff
             position.x += position.width;
             position.width += position.width;
             

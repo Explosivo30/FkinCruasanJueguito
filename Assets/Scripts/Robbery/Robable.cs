@@ -7,6 +7,8 @@ using System.Runtime.Remoting.Messaging;
 
 public class Robable : MonoBehaviour
 {
+    public string nombre;
+
     public List<Requerimiento> requerimientos;
     public List<Objeto> objetos;
     public List<Delito> delitos;

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting.YamlDotNet.Core.Tokens;
@@ -8,7 +9,7 @@ namespace Hedenrag
     namespace ExVar
     {
         [System.Serializable]
-        public struct ExtraLayer : ISerializationCallbackReceiver
+        public struct ExtraLayer : ISerializationCallbackReceiver, IEquatable<ExtraLayer>
         {
             [SerializeField, HideInInspector] ExLayer layer;
             [SerializeField, HideInInspector] int value;
@@ -42,6 +43,22 @@ namespace Hedenrag
                 return res != 0;
             }
 
+            public override bool Equals(object obj)
+            {
+                return obj is ExtraLayer layer && Equals(layer);
+            }
+
+            public bool Equals(ExtraLayer other)
+            {
+                return EqualityComparer<ExLayer>.Default.Equals(layer, other.layer) &&
+                       value == other.value &&
+                       Value == other.Value;
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(layer, value, Value);
+            }
 
             public static bool operator ==(ExtraLayer left, ExtraLayer right) { return (left.layer == right.layer && left.value == right.value); }
             public static bool operator !=(ExtraLayer left, ExtraLayer right) { return !(left == right); }

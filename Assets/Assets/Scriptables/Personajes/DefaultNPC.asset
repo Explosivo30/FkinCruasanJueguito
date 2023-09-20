@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d2c0c1ed4fc8da4fbfe8e1985a7ec84, type: 3}
+  m_Name: DefaultNPC
+  m_EditorClassIdentifier: 
+  nombres:
+  - Persona
+  numeroDeObjetos:
+    currentVal: 0
+    minVal: 3
+    maxVal: 10
+  poolDeObjetos:
+  - {fileID: 11400000, guid: 277277f423226644f98fbe20f14cc06d, type: 2}
+  numeroDePeligros:
+    currentVal: 0
+    minVal: 0
+    maxVal: 0
+  poolDePeligros: []
+  charactersPrefabs:
+  - {fileID: 1565564179251204151, guid: 6f6b9612a45165b4c9566af95121c7fa, type: 3}
+  - {fileID: 4466846031365024410, guid: 50b1a92c09a602b44a84627fcd1c6a64, type: 3}
+  - {fileID: 2045753490533598509, guid: fb4a2b0301e9a554fbcf5638d704484d, type: 3}
+  - {fileID: 9110404557798792310, guid: 622a6f8b5faa42c4bbada4f0bb58dae0, type: 3}
+  - {fileID: 50513943383456601, guid: d6a38a4151b412b4fa69b4c49fd329e6, type: 3}
