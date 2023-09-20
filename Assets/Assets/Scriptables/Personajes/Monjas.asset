@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d2c0c1ed4fc8da4fbfe8e1985a7ec84, type: 3}
+  m_Name: Monjas
+  m_EditorClassIdentifier: 
+  nombres:
+  - SorMaria
+  - SorCalista
+  - SorRita
+  - SorDita
+  - SorCarmen
+  - SorPancris
+  - SorMundis
+  numeroDeObjetos:
+    currentVal: 0
+    minVal: 1
+    maxVal: 3
+  poolDeObjetos:
+  - {fileID: 11400000, guid: f93b8bdd66bfc0741b186fa6b41d90cd, type: 2}
+  - {fileID: 11400000, guid: 561d31b9be688a14386e3eb3dc9e594b, type: 2}
+  - {fileID: 11400000, guid: 997f4cbf0c2b9134384f48f6f93ce6f4, type: 2}
+  - {fileID: 11400000, guid: dda5d1c769bc2184590a754b6f01c496, type: 2}
+  - {fileID: 11400000, guid: 277277f423226644f98fbe20f14cc06d, type: 2}
+  - {fileID: 11400000, guid: 29fb181aad48ec0458f22976481e3a71, type: 2}
+  numeroDePeligros:
+    currentVal: 0
+    minVal: 0
+    maxVal: 0
+  poolDePeligros: []
+  charactersPrefabs:
+  - {fileID: 7107343463545055900, guid: ac85219f18b5b6342bea74fb84337499, type: 3}

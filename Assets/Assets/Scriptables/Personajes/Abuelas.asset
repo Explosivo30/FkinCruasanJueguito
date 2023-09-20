@@ -10,14 +10,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d2c0c1ed4fc8da4fbfe8e1985a7ec84, type: 3}
-  m_Name: new NPC Items Pool
+  m_Name: Abuelas
   m_EditorClassIdentifier: 
-  nombres: []
+  nombres:
+  - Paquita
+  - Rosita
+  - Conchi
+  - MraDelfina
+  - Maria
+  - Mercedes
+  - Rosario
+  - MariCarmen
+  - Dolores
+  - Angustias
+  - Esperanza
   numeroDeObjetos:
     currentVal: 0
-    minVal: 0
-    maxVal: 0
-  poolDeObjetos: []
+    minVal: 1
+    maxVal: 4
+  poolDeObjetos:
+  - {fileID: 11400000, guid: 277277f423226644f98fbe20f14cc06d, type: 2}
+  - {fileID: 11400000, guid: e007790caa2e595498d93f4314af9782, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   numeroDePeligros:
     currentVal: 0
     minVal: 0

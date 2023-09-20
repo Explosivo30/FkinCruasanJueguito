@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5857dac28db492044ac6f627161aaf4d, type: 3}
   m_Name: Ganzua
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 4fc8da5bdad844f46a9f056f31c8536e, type: 3}
   buyPrice: 0
   sellPrice: 0
   capacidades:
-    enabled: 1
-    value:
-    - {fileID: 11400000, guid: f66a00099a2e04e48aa38bcb4f41e677, type: 2}
+    enabled: 0
+    value: []
+  ruido: 0
+  probabilidadDeAlarma: 0
+  probabilidadDeRobar: 0

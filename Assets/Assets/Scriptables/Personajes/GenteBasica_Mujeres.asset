@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d2c0c1ed4fc8da4fbfe8e1985a7ec84, type: 3}
+  m_Name: GenteBasica_Mujeres
+  m_EditorClassIdentifier: 
+  nombres:
+  - Zaida
+  - Laura
+  - Irene
+  - Veronica
+  - Olivia
+  - Loli
+  - Marta
+  - MariCarmen
+  numeroDeObjetos:
+    currentVal: 0
+    minVal: 1
+    maxVal: 4
+  poolDeObjetos:
+  - {fileID: 11400000, guid: 561d31b9be688a14386e3eb3dc9e594b, type: 2}
+  - {fileID: 11400000, guid: c8480005c75c45042a466e82fa926c5d, type: 2}
+  - {fileID: 11400000, guid: 8ec266a726b570e4ab305d3c7862e2e2, type: 2}
+  - {fileID: 11400000, guid: b46d084bad896774b84aa990e147efe7, type: 2}
+  - {fileID: 11400000, guid: 4f5d9d2d4005f204e9bdd1aa81e274bd, type: 2}
+  - {fileID: 11400000, guid: 85def4ec19cfd8c4799d39555be5df11, type: 2}
+  - {fileID: 11400000, guid: 4534d2703834137458e122c57b8c9230, type: 2}
+  - {fileID: 11400000, guid: c223639356648b242ae758ce6ad15f2d, type: 2}
+  - {fileID: 11400000, guid: 851f53219cd7ec3419adca3ed2d1f42f, type: 2}
+  - {fileID: 11400000, guid: b2eaf53529839a8489c9e91aa6069dda, type: 2}
+  - {fileID: 11400000, guid: e4bf797ded3e7824fbf4f815afc4550a, type: 2}
+  - {fileID: 11400000, guid: 711d53ee09ac5734db0b0d1f084896df, type: 2}
+  - {fileID: 11400000, guid: add75ca584d6a7444875011567766b24, type: 2}
+  - {fileID: 11400000, guid: 59610d9f6e6556f4fb476952ba8fe23b, type: 2}
+  - {fileID: 11400000, guid: 34e4511605c660c43bfd6b46ded5e84f, type: 2}
+  numeroDePeligros:
+    currentVal: 0
+    minVal: 0
+    maxVal: 0
+  poolDePeligros: []
+  charactersPrefabs:
+  - {fileID: 9110404557798792310, guid: 622a6f8b5faa42c4bbada4f0bb58dae0, type: 3}
+  - {fileID: 8867770205291825230, guid: b19456700e381894d890fafc2e9c674d, type: 3}
+  - {fileID: 519575208579242928, guid: fdcc1d38251a18a4eb1905e35370998f, type: 3}
+  - {fileID: 3327376151463741996, guid: ba8c4a53d50aa4f4790f2ede89ad3980, type: 3}
+  - {fileID: 1086720275630163333, guid: 247e6b9143d0be144b67946e06cee6d6, type: 3}
