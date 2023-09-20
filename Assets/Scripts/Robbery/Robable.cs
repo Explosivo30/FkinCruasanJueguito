@@ -11,6 +11,7 @@ public class Robable : MonoBehaviour
 
     public List<Requerimiento> requerimientos;
     public List<Objeto> objetos;
+    public Edificio edificio;
     public List<Delito> delitos;
     public List<Peligro> peligros;
 
@@ -18,6 +19,12 @@ public class Robable : MonoBehaviour
 
     Optional<List<string>> infoList = new(null, false);
     [SerializeField] ExtraLayer investigateLayer;
+
+    //Investigar
+    //Hurto
+    //Entrar
+    //Atraco
+    //Hablar
 
     private void Awake()
     {
@@ -48,12 +55,7 @@ public class Robable : MonoBehaviour
         return infoList.Value.ToArray();
     }
 
-    void Robar()
-    {
-        //Cargar escena de casa
-    }
-
-    void Atracar()
+    public void EntrarCasa()
     {
 
     }
