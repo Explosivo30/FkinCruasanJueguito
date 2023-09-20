@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class CapturaPantalla : MonoBehaviour
@@ -20,6 +21,11 @@ public class CapturaPantalla : MonoBehaviour
 
     public static void MakeScreenshot(int resolutionMultiplier = 1)
     {
-        ScreenCapture.CaptureScreenshot("/Captures/" + DateTime.UtcNow, resolutionMultiplier);
+#if UNITY_EDITOR
+        UnityEditor.AssetDatabase.CreateFolder("", "Captures");
+#else
+        Directory.CreateDirectory("Captures");
+#endif
+        ScreenCapture.CaptureScreenshot("Captures/Screenshot_" + DateTime.Now.Ticks + ".png", resolutionMultiplier);
     }
 }
