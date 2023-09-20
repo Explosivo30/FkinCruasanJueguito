@@ -38,7 +38,7 @@ public class OriginNode : MonoBehaviour
     void OnDestroy()
     {
         originNodes.Remove(this);
-        for(int i = myId; i < originNodes.Count(); i++)
+        for(int i = myId; i < originNodes.Count; i++)
         {
             originNodes[i].myId--;
         }
