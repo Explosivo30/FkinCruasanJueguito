@@ -27,8 +27,11 @@ public class ClickManager : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    Robable robable;
+
     public void SetOptions(Robable sr)
     {
+        robable = sr;
         gameObject.SetActive (true);
         transform.position = Input.mousePosition;
         for (int i = 0; i < options.Length; i++)
@@ -41,12 +44,14 @@ public class ClickManager : MonoBehaviour
 
     public void Investigar()
     {
-
+        string[] infoRobable = robable.Investigar();
+        ListManager.instance.SetList(infoRobable);
     }
 
     public void Hurtar()
     {
-
+        MenuDeHurto.instance.CreateMenu(robable);
+        gameObject.SetActive(false);
     }
 
     public void Atracar()

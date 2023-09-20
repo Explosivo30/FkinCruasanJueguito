@@ -121,9 +121,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requerimientos: []
   objetos: []
+  delitos: []
+  peligros: []
   posibilidades:
     layer: {fileID: 11400000, guid: a5e6f70837d41494d99f4764abeceebc, type: 2}
     value: 5
+  investigateLayer:
+    layer: {fileID: 0}
+    value: 0
 --- !u!114 &8183978704434381891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,11 +145,35 @@ MonoBehaviour:
   - eventID: 0
     callback:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 5817725227652072748}
+          m_TargetAssemblyTypeName: Robable, Assembly-CSharp
+          m_MethodName: MostrarInfo
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - eventID: 1
     callback:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 5817725227652072748}
+          m_TargetAssemblyTypeName: Robable, Assembly-CSharp
+          m_MethodName: OcultarInfo
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - eventID: 4
     callback:
       m_PersistentCalls:
