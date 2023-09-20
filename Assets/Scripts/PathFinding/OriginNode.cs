@@ -35,6 +35,15 @@ public class OriginNode : MonoBehaviour
         agent.SetDestination(originNodes[index].transform.position);
     }
 
+    void OnDestroy()
+    {
+        originNodes.Remove(this);
+        for(int i = myId; i < originNodes.Count(); i++)
+        {
+            originNodes[i].myId--;
+        }
+    }
+
 
     class OriginCreator
     {
