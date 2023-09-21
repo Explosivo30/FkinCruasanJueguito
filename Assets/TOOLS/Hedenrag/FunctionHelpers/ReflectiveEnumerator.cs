@@ -22,6 +22,16 @@ namespace Hedenrag
                 }
                 return objects;
             }
+
+            public static List<Type> GetDerivedTypes<T>() where T : class
+            {
+                List<Type> objects = new List<Type>();
+                foreach(Assembly asm in AppDomain.CurrentDomain.GetAssemblies())
+                {
+                    objects.AddRange((List<Type>)asm.GetTypes().Where(myType => myType.IsClass && !myType.IsAbstract && myType.IsSubclassOf(typeof(T))));
+                }
+                return objects;
+            }
         }
     }
 }

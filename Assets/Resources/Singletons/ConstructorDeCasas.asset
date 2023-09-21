@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b425d08e1779f4a823a24afd651dd3, type: 3}
+  m_Name: ConstructorDeCasas
+  m_EditorClassIdentifier: 
+  muebles:
+  - {fileID: 2085090761798076517, guid: fc7c88fba8c8505418d975967fd54f82, type: 3}
+  - {fileID: 5277612631684477183, guid: b761f530712d2c4478531d478499fa2b, type: 3}
+  - {fileID: 6750671773894635402, guid: 87da1098c7c25ad48bec1812da0adc79, type: 3}
+  - {fileID: 6670522063720761409, guid: e0ddeb2352f53f6428f6e392867f1a28, type: 3}
