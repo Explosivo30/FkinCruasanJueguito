@@ -32,7 +32,7 @@ public class ShowInventoryManager : MonoBehaviour
     public static void ShowInventory()
     {
         if (!instance) { return; }
-        List<Objeto> objetosUtiles = new List<Objeto>(); //TODO inventory.GetAllUsefullItems
+        List<Objeto> objetosUtiles = GameManager.Instance.DevolverObjeto(); //TODO inventory.GetAllUsefullItems
 
         foreach(Objeto obj in objetosUtiles)
         {

@@ -18,8 +18,8 @@ public class GameManager : MonoBehaviour
     int currentDays;
 
     //Money
-    [SerializeField] int maxMoney;
-    int currentMoney;
+    [SerializeField] public int maxMoney;
+    [NonSerialized] public int currentMoney;
 
     //Action Points
     public int maxActionPoints;
@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour
     //Noise
     [SerializeField] int maxNoise;
     int currentNoise;
+
+    
 
 
     [SerializeField] List<Objeto> objetos;
@@ -137,6 +139,19 @@ public class GameManager : MonoBehaviour
         }
         currentMoney += total;
         return total;
+    }
+
+    public List<Objeto> DevolverObjeto()
+    {
+        List<Objeto> objetosUtiles = new List<Objeto>();
+        for(int i = 0; i < objetos.Count; i++)
+        {
+            if (objetos[i].capacidades)
+            {
+                 objetosUtiles.Add(objetos[i]);
+            }
+        }
+        return objetosUtiles;
     }
 
 }

@@ -8,10 +8,14 @@ public class HUD : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI currentActionPoints;
     [SerializeField] TextMeshProUGUI maxActionPoints;
+    [SerializeField] TextMeshProUGUI currentMoney;
+    [SerializeField] TextMeshProUGUI maxDebt;
 
     private void Awake()
     {
         currentActionPoints.text = GameManager.Instance.currentActionPoints.ToString();
         maxActionPoints.text = GameManager.Instance.maxActionPoints.ToString();
+        currentMoney.text = GameManager.Instance.currentMoney.ToString();
+        maxDebt.text = GameManager.Instance.maxMoney.ToString();
     }
 }
