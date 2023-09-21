@@ -23,4 +23,4 @@ MonoBehaviour:
     - {fileID: 0}
   ruido: 0
   probabilidadDeAlarma: 0
-  probabilidadDeRobar: 0
+  probabilidadDeRobar: 57.3

@@ -133,6 +133,7 @@ MonoBehaviour:
   nombre: Persona
   requerimientos: []
   objetos: []
+  edificio: {fileID: 0}
   delitos: []
   peligros: []
   posibilidades:
@@ -151,7 +152,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.2
-  m_Speed: 2
+  m_Speed: 1
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 0
