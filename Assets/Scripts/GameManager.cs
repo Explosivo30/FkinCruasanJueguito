@@ -29,12 +29,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] int maxNoise;
     int currentNoise;
 
-    
-
-
     [SerializeField] List<Objeto> objetos;
 
-    [SerializeField] List<Requerimiento> habilidadesActuales;
 
     private void Awake()
     {
@@ -98,31 +94,15 @@ public class GameManager : MonoBehaviour
         this.maxNoise = maxNoise;
     }
 
-
-    
-
-    public void AddItemsToBag(Objeto obj)
+    public void AddToBag(Objeto obj)
     {
         objetos.Add(obj);
-        if (obj.capacidades)
-        {
-            foreach (Requerimiento req in obj.capacidades.Value)
-            {
-                habilidadesActuales.Add(req);
-            }
-        }
     }
 
     public void SellItemFromBag(Objeto obj)
     {
-
-        if (obj.capacidades)
-        {
-            foreach (Requerimiento req in obj.capacidades.Value)
-            {
-                habilidadesActuales.Add(req);
-            }
-        }
+        currentMoney += obj.sellPrice;
+        
         objetos.Remove(obj);
     }
 
@@ -152,6 +132,18 @@ public class GameManager : MonoBehaviour
             }
         }
         return objetosUtiles;
+    }
+
+
+    public void QuitarDinero(int precio)
+    {
+        currentMoney -= precio;
+    }
+
+
+    public void CargarFinalDelJuego()
+    {
+        //Load Scene
     }
 
 }
