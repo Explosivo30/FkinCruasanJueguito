@@ -12,15 +12,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d2c0c1ed4fc8da4fbfe8e1985a7ec84, type: 3}
   m_Name: GenteEnBici
   m_EditorClassIdentifier: 
-  nombres: []
+  nombres:
+  - Will
+  - Timmy
+  - Jack
+  - Robert
+  - Alonso
   numeroDeObjetos:
     currentVal: 0
     minVal: 0
     maxVal: 0
-  poolDeObjetos: []
+  poolDeObjetos:
+  - {fileID: 11400000, guid: 711d53ee09ac5734db0b0d1f084896df, type: 2}
+  - {fileID: 11400000, guid: d829b846794777e4cb6c6e03220da742, type: 2}
+  - {fileID: 11400000, guid: 73f15956f25f4f04abea008f9871383d, type: 2}
+  - {fileID: 11400000, guid: 5e5f779aac041254faea2caa1bafa8e0, type: 2}
+  - {fileID: 11400000, guid: dce6bccab5f6bd14391d579c0c493845, type: 2}
+  - {fileID: 11400000, guid: 34e4511605c660c43bfd6b46ded5e84f, type: 2}
+  - {fileID: 11400000, guid: 8d4c8e9765552b447ac7a4c8ad6d6dd4, type: 2}
+  - {fileID: 11400000, guid: c8480005c75c45042a466e82fa926c5d, type: 2}
+  - {fileID: 11400000, guid: c223639356648b242ae758ce6ad15f2d, type: 2}
+  - {fileID: 11400000, guid: 561d31b9be688a14386e3eb3dc9e594b, type: 2}
+  - {fileID: 11400000, guid: eb6118d5f0322a648a9f8b14bc62a56f, type: 2}
+  - {fileID: 11400000, guid: add75ca584d6a7444875011567766b24, type: 2}
   numeroDePeligros:
     currentVal: 0
     minVal: 0
     maxVal: 0
   poolDePeligros: []
-  charactersPrefabs: []
+  charactersPrefabs:
+  - {fileID: 1978041873452228740, guid: bdc64d4a48c936b4b842829c4a577e6f, type: 3}
+  - {fileID: 2909354767983734641, guid: 55e22e21b38710f4d80ea874d30b39a5, type: 3}
