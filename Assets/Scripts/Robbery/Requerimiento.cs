@@ -5,7 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NombreRequerimiento", menuName = "Scriptable Objects/Robbery Game/New Requirement")]
 public class Requerimiento : ScriptableObject
 {
-    [SerializeField] string textoInfoRequerimiento;
+    public Sprite imagen;
+    public string nombre;
 
+    [SerializeField] string textoInfoRequerimiento;
     public string info => ("• " + textoInfoRequerimiento);
 }
