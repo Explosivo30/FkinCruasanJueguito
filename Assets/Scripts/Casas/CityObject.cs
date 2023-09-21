@@ -26,4 +26,30 @@ public class CityObject : MonoBehaviour
             instance = new Optional<CityObject> (null, false);
         }
     }
+
+
+    public static void ActivateCity()
+    {
+        if (instance)
+        {
+            instance.Value.city.SetActive(true);
+        }
+        else
+        {
+            Debug.Log("City does not currently exist");
+        }
+    }
+
+    public static void DeactivateCity()
+    {
+        if (instance)
+        {
+            instance.Value.city.SetActive(true);
+        }
+        else
+        {
+            Debug.Log("City does not currently exist");
+        }
+    }
+
 }

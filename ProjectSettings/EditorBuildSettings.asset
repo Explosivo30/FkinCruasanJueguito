@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/TOOLS/Hedenrag/SceneLoader/Build/SceneLoaderEmptyScene.unity
     guid: a8cb78805121b7d449d397188bef6596
+  - enabled: 1
+    path: Assets/Scenes/EscenaOtto.unity
+    guid: a730a145d7a4c504b9f3fe804c0a8daa
+  - enabled: 1
+    path: Assets/Scenes/EscenasCasas/habitacion.unity
+    guid: d79a07fe7217fc14eb16b7e2cb76f321
   m_configObjects: {}
