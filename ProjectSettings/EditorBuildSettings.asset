@@ -15,6 +15,21 @@ EditorBuildSettings:
     path: Assets/Scenes/EscenaOtto.unity
     guid: a730a145d7a4c504b9f3fe804c0a8daa
   - enabled: 1
-    path: Assets/Scenes/EscenasCasas/habitacion.unity
+    path: Assets/Scenes/EscenasEdificios/habitacion.unity
     guid: d79a07fe7217fc14eb16b7e2cb76f321
+  - enabled: 1
+    path: Assets/Scenes/EscenasEdificios/Banco.unity
+    guid: 63b30df87b7d50946836418d83395833
+  - enabled: 1
+    path: Assets/Scenes/EscenasEdificios/Bar.unity
+    guid: 256c6bb879c8fef41ba786efe36399e3
+  - enabled: 1
+    path: Assets/Scenes/EscenasEdificios/CuartelGeneral.unity
+    guid: 57c9156a03ddd8d46a38f4b1bbbd959f
+  - enabled: 1
+    path: Assets/Scenes/EscenasEdificios/Iglesia.unity
+    guid: f47d39d0299de644f8c124d7689b5e80
+  - enabled: 1
+    path: Assets/Scenes/EscenasEdificios/Mercamona.unity
+    guid: f66e58307f34c2b4884b46f125f2f63c
   m_configObjects: {}

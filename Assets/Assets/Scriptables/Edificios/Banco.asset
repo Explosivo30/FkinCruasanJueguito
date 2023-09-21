@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Banco
   m_EditorClassIdentifier: 
   loader:
-    asset: {fileID: 0}
+    asset: {fileID: 102900000, guid: 63b30df87b7d50946836418d83395833, type: 3}
     working: 0
     sceneToLoad: 
   roomPrefab: {fileID: 0}

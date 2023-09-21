@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Mercamona
   m_EditorClassIdentifier: 
   loader:
-    asset: {fileID: 0}
-    working: 0
+    asset: {fileID: 102900000, guid: f66e58307f34c2b4884b46f125f2f63c, type: 3}
+    working: 1
     sceneToLoad: 
   roomPrefab: {fileID: 0}
