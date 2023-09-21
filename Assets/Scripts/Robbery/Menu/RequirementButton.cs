@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class RequirementButton : DragObjectTarget
 {
     [SerializeField] GameObject requirementButton;
+    [SerializeField] public Image requirementButtonImage;
+    [SerializeField] public TMPro.TextMeshProUGUI nombre;
     [HideInInspector] public Requerimiento requerimiento;
     [HideInInspector] public Robable target;
 
@@ -20,6 +23,7 @@ public class RequirementButton : DragObjectTarget
             {
                 target.requerimientos.Remove(requerimiento);
                 Destroy(requirementButton);
+                //TODO remove item from inventory
                 return true;
             }
         }
