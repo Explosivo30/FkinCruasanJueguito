@@ -35,7 +35,7 @@ public class ShowInventoryManager : MonoBehaviour
         if (!instance) { return; }
         HideInventory();
         instance.Value.gameObject.SetActive(true);
-        List<Objeto> objetosUtiles = GameManager.Instance.DevolverObjeto(); //TODO inventory.GetAllUsefullItems
+        List<Objeto> objetosUtiles = GameManager.Instance.DevolverObjeto();
 
         foreach(Objeto obj in objetosUtiles)
         {

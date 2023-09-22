@@ -36,7 +36,8 @@ public class HurtableButton : MonoBehaviour
         }
         else//acierto
         {
-            //TODO add to inventory
+            GameManager.Instance.AddToBag(objeto);
+            //TODO DONEadd to inventory
             target.objetos.Remove(objeto);
             Destroy(gameObject);
         }

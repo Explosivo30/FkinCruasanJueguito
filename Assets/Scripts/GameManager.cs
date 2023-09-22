@@ -49,6 +49,17 @@ public class GameManager : MonoBehaviour
         currentNoise = 0;
     }
 
+    public void RemoveItemInventory(Objeto obj)
+    {
+        for(int i = 0; i < objetos.Count; i++)
+        {
+            if (objetos[i] == obj)
+            {
+                objetos.Remove(obj);
+            }
+        }
+    }
+
 
     public void ReduceActionPoints(int reductionPoints)
     {

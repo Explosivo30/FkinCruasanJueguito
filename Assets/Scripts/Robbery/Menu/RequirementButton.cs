@@ -23,7 +23,9 @@ public class RequirementButton : DragObjectTarget
             {
                 target.requerimientos.Remove(requerimiento);
                 Destroy(requirementButton);
+                GameManager.Instance.RemoveItemInventory(inventoryButton.objeto);
                 //TODO remove item from inventory
+                //DONE review work to know if is as you intended
                 return true;
             }
         }
