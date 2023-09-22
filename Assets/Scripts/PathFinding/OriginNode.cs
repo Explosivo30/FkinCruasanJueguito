@@ -35,7 +35,6 @@ public class OriginNode : MonoBehaviour
     {
         int ogIndex = Random.Range(0, originNodes.Count - 1);
         GameObject g = NPCPool.Instance.CreateNPC(originNodes[ogIndex].transform);
-        g.transform.parent = null;
         NavMeshAgent agent = g.GetComponent<NavMeshAgent>();
 
         int destIndex = Random.Range(0, originNodes.Count - 2);

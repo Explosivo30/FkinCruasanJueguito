@@ -27,11 +27,14 @@ public class ShowInventoryManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        HideInventory();
     }
 
     public static void ShowInventory()
     {
         if (!instance) { return; }
+        HideInventory();
+        instance.Value.gameObject.SetActive(true);
         List<Objeto> objetosUtiles = GameManager.Instance.DevolverObjeto(); //TODO inventory.GetAllUsefullItems
 
         foreach(Objeto obj in objetosUtiles)
@@ -46,5 +49,18 @@ public class ShowInventoryManager : MonoBehaviour
         }
     }
 
-
+    public static void HideInventory()
+    {
+        if (!instance) { return; }
+        if(instance.Value.ContextItems != null)
+        {
+            foreach (var obj in instance.Value.ContextItems)
+            {
+                Destroy(obj.gameObject);
+            }
+            instance.Value.ContextItems.Clear();
+        }
+       
+        instance.Value.gameObject.SetActive(false);
+    }
 }

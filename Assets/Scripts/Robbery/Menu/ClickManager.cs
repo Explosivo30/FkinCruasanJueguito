@@ -59,5 +59,22 @@ public class ClickManager : MonoBehaviour
 
     }
 
+    public void Entrar()
+    {
+        if(robable.requerimientos.Count > 0)
+        {
+            RequirementManager.ShowMenuToDoStuff(robable, CargarEntrada);
+        }
+        else
+        {
+            CargarEntrada();
+        }
+    }
+    void CargarEntrada()
+    {
+        //TODO set in game manager current edificio to unload it later
+        robable.edificio.LoadScene(this, () => { /* set the state here */ });
+    }
+
     #endregion
 }

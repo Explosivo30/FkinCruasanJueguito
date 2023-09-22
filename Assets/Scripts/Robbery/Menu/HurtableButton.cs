@@ -11,10 +11,15 @@ public class HurtableButton : MonoBehaviour
     [SerializeField] TextMeshProUGUI itemPercentage;
     [SerializeField] Image image;
 
+    Robable target;
+    Objeto objeto;
+
     float probabilidadDeRobar;
 
-    public void SetButton(Objeto objeto)
+    public void SetButton(Objeto objeto, Robable robable)
     {
+        this.objeto = objeto;
+        this.target = robable;
         image.overrideSprite = objeto.image;
         itemName.text = objeto.name;
         itemPercentage.text = objeto.probabilidadDeRobar + "%";
@@ -24,13 +29,16 @@ public class HurtableButton : MonoBehaviour
     public void Robar()
     {
         float roll = Random.Range(0f, 100f);
-        if(roll > probabilidadDeRobar)
+        if(roll > probabilidadDeRobar)//fallo
         {
             Debug.LogWarning("Not Implemented: robar fallo", this);
+            //TODO robar fallo logic
         }
-        else
+        else//acierto
         {
-            Debug.LogWarning("Not Implemented: robar acierto", this);
+            //TODO add to inventory
+            target.objetos.Remove(objeto);
+            Destroy(gameObject);
         }
     }
 }

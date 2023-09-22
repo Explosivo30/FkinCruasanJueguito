@@ -32,11 +32,28 @@ namespace Hedenrag
 
             #region operators
 
-#if NET_4_6
+            public override bool Equals(object obj)
+            {
+                return obj is Optional<T> optional && Equals(optional);
+            }
+
+            public bool Equals(Optional<T> other)
+            {
+                return enabled == other.enabled &&
+                       EqualityComparer<T>.Default.Equals(value, other.value);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(enabled, value);
+            }
+
             //bool
             public static bool operator true(Optional<T> optional) => optional.enabled;
             public static bool operator false(Optional<T> optional) => !optional.enabled;
             public static bool operator !(Optional<T> optional) => !optional.enabled;
+
+#if NET_4_6
             public static bool operator ==(Optional<T> optional, Optional<T> other) { return (optional.value == (dynamic)other.value && optional.enabled == other.enabled); }
             public static bool operator !=(Optional<T> optional, Optional<T> other) { return (optional.value != (dynamic)other.value || optional.enabled != other.enabled); }
             public static bool operator ==(Optional<T> optional, T other) { return optional.value == (dynamic)other; }
@@ -114,21 +131,7 @@ namespace Hedenrag
                 return value;
             }
 
-            public override bool Equals(object obj)
-            {
-                return obj is Optional<T> optional && Equals(optional);
-            }
-
-            public bool Equals(Optional<T> other)
-            {
-                return enabled == other.enabled &&
-                       EqualityComparer<T>.Default.Equals(value, other.value);
-            }
-
-            public override int GetHashCode()
-            {
-                return HashCode.Combine(enabled, value);
-            }
+            
 #endif
             #endregion
         }

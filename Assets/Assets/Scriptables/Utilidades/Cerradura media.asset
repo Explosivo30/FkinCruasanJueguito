@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb045fbfa99653044b24456ef01b569a, type: 3}
   m_Name: Cerradura media
   m_EditorClassIdentifier: 
+  imagen: {fileID: 21300000, guid: d01d1158c1aee1c4fbe9fa4929d959b1, type: 3}
+  nombre: Cerradura
   textoInfoRequerimiento: Para esta puerta necesitare herramientas especializadas
     o tambien puedo usar la fuerza.

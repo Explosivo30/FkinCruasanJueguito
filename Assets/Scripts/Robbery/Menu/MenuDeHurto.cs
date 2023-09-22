@@ -34,9 +34,15 @@ public class MenuDeHurto : MonoBehaviour
         foreach(Objeto obj in robable.objetos)
         {
             GameObject g = Instantiate(hurtableButtonPrefab, content);
+            buttons.Add(g);
             HurtableButton hB = g.GetComponent<HurtableButton>();
-            hB.SetButton(obj);
+            hB.SetButton(obj, robable);
         }
         gameObject.SetActive(true);
+    }
+
+    public void HideMenu()
+    {
+        gameObject.SetActive(false );
     }
 }

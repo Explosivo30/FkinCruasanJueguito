@@ -45,11 +45,20 @@ public class RequirementManager : MonoBehaviour
         }
     }
 
+    public void HideMenu()
+    {
+        foreach (RequirementButton button in buttons)
+        {
+            Destroy(button.gameObject);
+        }
+        buttons.Clear();
+    }
+
     private void Update()
     {
         if (target)
         {
-            for (int i = buttons.Count-1; i >= 0; i++)
+            for (int i = buttons.Count-1; i >= 0; i--)
             {
                 if (buttons[i] == null)
                     buttons.Remove(buttons[i]);
