@@ -11,7 +11,7 @@ public class ShowInventoryManager : MonoBehaviour
 
     [SerializeField] Transform content;
 
-    List<GameObject> ContextItems;
+    List<GameObject> ContextItems = new();
 
     List<Objeto> usados = new List<Objeto>();
 
@@ -41,6 +41,7 @@ public class ShowInventoryManager : MonoBehaviour
         {
             instance.Value.ContextItems.Add(Instantiate(instance.Value.buttonPrefab, instance.Value.content));
             InventoryButton inveButt = instance.Value.ContextItems.Last().GetComponent<InventoryButton>();
+            Debug.Log("Objeto instanciado", inveButt);
             inveButt.objeto = obj;
             inveButt.sprite.sprite = obj.image;
             inveButt.nombre.text = obj.name;

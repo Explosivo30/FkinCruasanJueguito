@@ -28,7 +28,13 @@ public class HurtableButton : MonoBehaviour
 
     public void Robar()
     {
+        if (GameManager.Instance.MaxWeight < (GameManager.Instance.GetPeso() + objeto.peso))
+        {
+            Debug.Log("Your inventory Is Full");
+            return;
+        }
         float roll = Random.Range(0f, 100f);
+        
         if(roll > probabilidadDeRobar)//fallo
         {
             Debug.LogWarning("Not Implemented: robar fallo", this);

@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
 
     //Weight
     [SerializeField] int maxWeight;
-
+    public int MaxWeight => maxWeight;
     //Days
     [SerializeField] int maxDays;
 
@@ -101,14 +101,11 @@ public class GameManager : MonoBehaviour
 
     public void AddToBag(Objeto obj)
     {
-        if(maxWeight<GetPeso() + obj.peso)
-        {
-            objetos.Add(obj);
-        }
-        else
-        {
-            Debug.Log("Your inventory Is Full");
-        }
+        
+        objetos.Add(obj);
+        
+        Debug.Log("Inventory wheight = " + GetPeso() + "/" + maxWeight);
+        
         
     }
 
@@ -153,13 +150,13 @@ public class GameManager : MonoBehaviour
         currentMoney -= precio;
     }
 
-    public int GetPeso()
+    public float GetPeso()
     {
-        int pesototal = 0;
+        float pesototal = 0;
 
         for(int i = 0;i < objetos.Count; i++)
         {
-            pesototal += (int)objetos[i].peso;
+            pesototal += objetos[i].peso;
         }
 
         return pesototal;

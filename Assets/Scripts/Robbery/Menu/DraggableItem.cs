@@ -20,22 +20,24 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IEndDragHandler, 
         image.raycastTarget = true;
     }
 
-    public void OnDrag(PointerEventData eventData)
+    void IBeginDragHandler.OnBeginDrag(PointerEventData eventData)
     {
         parentAfterDrag = transform.parent;
-        transform.SetParent(transform.root);
+        transform.SetParent(transform.GetComponentInParent<Canvas>().transform);
         transform.SetAsLastSibling();
         image.raycastTarget = false;
     }
 
-    public void OnEndDrag(PointerEventData eventData)
+    public void OnDrag(PointerEventData eventData)
     {
         transform.position = Input.mousePosition;
     }
 
-    void IBeginDragHandler.OnBeginDrag(PointerEventData eventData)
+    public void OnEndDrag(PointerEventData eventData)
     {
         transform.SetParent(parentAfterDrag);
         image.raycastTarget = true;
     }
+
+    
 }

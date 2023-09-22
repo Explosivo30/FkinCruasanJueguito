@@ -63,6 +63,7 @@ public class ClickManager : MonoBehaviour
     {
         if(robable.requerimientos.Count > 0)
         {
+            ShowInventoryManager.ShowInventory();
             RequirementManager.ShowMenuToDoStuff(robable, CargarEntrada);
         }
         else
@@ -73,7 +74,7 @@ public class ClickManager : MonoBehaviour
     void CargarEntrada()
     {
         //TODO set in game manager current edificio to unload it later
-        robable.edificio.LoadScene(this, () => { /* set the state here */ });
+        robable.edificio.LoadScene(GameManager.Instance, () => { /* set the state here */ });
     }
 
     #endregion

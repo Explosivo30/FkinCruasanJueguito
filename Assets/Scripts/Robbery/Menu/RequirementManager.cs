@@ -35,7 +35,7 @@ public class RequirementManager : MonoBehaviour
 
         foreach (Requerimiento req in robable.requerimientos)
         {
-            GameObject g = Instantiate(instance.buttonPrefab);
+            GameObject g = Instantiate(instance.buttonPrefab, instance.transform);
             RequirementButton button = g.GetComponent<RequirementButton>();
             instance.buttons.Add(button);
             button.nombre.text = req.nombre;
