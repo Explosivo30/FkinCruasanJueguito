@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 1.0955204
       objectReference: {fileID: 0}
+    - target: {fileID: 4826467739743948596, guid: d9e0ba16c5524c34d8c55ed9f0a01a19, type: 3}
+      propertyPath: posibilidades.value
+      value: 32
+      objectReference: {fileID: 0}
     - target: {fileID: 5423861101045361466, guid: d9e0ba16c5524c34d8c55ed9f0a01a19, type: 3}
       propertyPath: m_Name
       value: Traficante Variant
