@@ -32,4 +32,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EscenasEdificios/Mercamona.unity
     guid: f66e58307f34c2b4884b46f125f2f63c
+  - enabled: 1
+    path: Assets/Scenes/EscenasEdificios/MainMenuScene.unity
+    guid: c066f368a14cff7408c00c306e811dca
+  - enabled: 1
+    path: Assets/Scenes/EscenasEdificios/Principal_De_Dia.unity
+    guid: f101acf86569cfa43a200251ac58d79b
+  - enabled: 1
+    path: Assets/Scenes/EscenasEdificios/Principal_De_Noche.unity
+    guid: bc3ccb293f2686d48be9320d79607596
   m_configObjects: {}
