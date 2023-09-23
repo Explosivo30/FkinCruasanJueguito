@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2301529479713608224, guid: 7e7dd773da82b3240a20028ab0d1624b, type: 3}
       propertyPath: m_Name
-      value: YayaMovingNPC Variant
+      value: YayaMovingNPC
       objectReference: {fileID: 0}
     - target: {fileID: 2809342832148117190, guid: 7e7dd773da82b3240a20028ab0d1624b, type: 3}
       propertyPath: m_Size.x
@@ -92,6 +92,10 @@ PrefabInstance:
     - target: {fileID: 3980492771203098908, guid: 5f1695701f559e14eae92cde021a0c95, type: 3}
       propertyPath: m_Name
       value: yaya_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3980492771203098908, guid: 5f1695701f559e14eae92cde021a0c95, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7313400549900856415, guid: 5f1695701f559e14eae92cde021a0c95, type: 3}
       propertyPath: m_LocalPosition.x

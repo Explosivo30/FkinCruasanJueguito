@@ -98,6 +98,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hippie_0
       objectReference: {fileID: 0}
+    - target: {fileID: 2066289394690928624, guid: c706e4d23ee55c442befd0d51bc4615c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6645759504645871615, guid: c706e4d23ee55c442befd0d51bc4615c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

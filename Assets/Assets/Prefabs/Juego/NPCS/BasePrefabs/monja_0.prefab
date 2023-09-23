@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2296193790062039106}
   - component: {fileID: 763786629110828541}
   - component: {fileID: 736083352694460396}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: monja_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

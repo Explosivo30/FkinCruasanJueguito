@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: loli_0
       objectReference: {fileID: 0}
+    - target: {fileID: 5368939964846530124, guid: 79fce9d21f56a964e9b6b1ef3a8cceb1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -100,7 +104,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2301529479713608224, guid: 7e7dd773da82b3240a20028ab0d1624b, type: 3}
       propertyPath: m_Name
-      value: LoliMovingNPC Variant
+      value: LoliMovingNPC
       objectReference: {fileID: 0}
     - target: {fileID: 2809342832148117190, guid: 7e7dd773da82b3240a20028ab0d1624b, type: 3}
       propertyPath: m_Size.x

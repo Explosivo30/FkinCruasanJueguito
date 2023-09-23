@@ -98,6 +98,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: andy_0
       objectReference: {fileID: 0}
+    - target: {fileID: 4230500854512689713, guid: bacbc46104ebed048bee20201bf791fa, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8347066857294803940, guid: bacbc46104ebed048bee20201bf791fa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

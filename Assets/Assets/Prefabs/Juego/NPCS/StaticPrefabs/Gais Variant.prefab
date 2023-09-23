@@ -133,6 +133,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: gais_0
       objectReference: {fileID: 0}
+    - target: {fileID: 4207138000305883892, guid: a4b7b9a7c19057d4c906cf20a5aedf12, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

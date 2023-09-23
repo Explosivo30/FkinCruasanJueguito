@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6645759504645871615}
   - component: {fileID: 8267174583109422323}
   - component: {fileID: 7894213884432772050}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: hippie_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

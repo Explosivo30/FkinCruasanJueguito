@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7313400549900856415}
   - component: {fileID: 1113188388032468171}
   - component: {fileID: 8247196329610848536}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: yaya_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

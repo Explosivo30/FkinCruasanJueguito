@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 429841534391288190}
   - component: {fileID: 7829752182676588667}
   - component: {fileID: 7699453081054289436}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: macarra_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2301529479713608224, guid: 7e7dd773da82b3240a20028ab0d1624b, type: 3}
       propertyPath: m_Name
-      value: "Ni\xF1oCorriendoMovingNPC Variant"
+      value: "Ni\xF1oCorriendoMovingNPC"
       objectReference: {fileID: 0}
     - target: {fileID: 2809342832148117190, guid: 7e7dd773da82b3240a20028ab0d1624b, type: 3}
       propertyPath: m_Size.x
@@ -97,6 +97,10 @@ PrefabInstance:
     - target: {fileID: 1923721600028997552, guid: 0d2976d00533be944b2fe2ef5df853f3, type: 3}
       propertyPath: m_Name
       value: "ni\xF1o corriendo_0"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923721600028997552, guid: 0d2976d00533be944b2fe2ef5df853f3, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8435038567747089009, guid: 0d2976d00533be944b2fe2ef5df853f3, type: 3}
       propertyPath: m_LocalPosition.x

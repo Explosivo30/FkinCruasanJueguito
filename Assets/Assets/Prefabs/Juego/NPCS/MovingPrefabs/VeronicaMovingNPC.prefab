@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2301529479713608224, guid: 7e7dd773da82b3240a20028ab0d1624b, type: 3}
       propertyPath: m_Name
-      value: VeronicaMovingNPC Variant
+      value: VeronicaMovingNPC
       objectReference: {fileID: 0}
     - target: {fileID: 2809342832148117190, guid: 7e7dd773da82b3240a20028ab0d1624b, type: 3}
       propertyPath: m_Size.x
@@ -137,6 +137,10 @@ PrefabInstance:
     - target: {fileID: 8927529362338292117, guid: d885d30cfc2b27341a878de9ea57772f, type: 3}
       propertyPath: m_Name
       value: veronica_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927529362338292117, guid: d885d30cfc2b27341a878de9ea57772f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

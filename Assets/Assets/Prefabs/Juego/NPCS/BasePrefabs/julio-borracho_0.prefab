@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1877033192831781734}
   - component: {fileID: 2650473328471753350}
   - component: {fileID: 8123312308338419915}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: julio-borracho_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

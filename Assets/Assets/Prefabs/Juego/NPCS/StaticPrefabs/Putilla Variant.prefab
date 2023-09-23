@@ -161,6 +161,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prostituta_0
       objectReference: {fileID: 0}
+    - target: {fileID: 7318597911335374431, guid: eec6c8d6081b2e040b96c13663a5ac5b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

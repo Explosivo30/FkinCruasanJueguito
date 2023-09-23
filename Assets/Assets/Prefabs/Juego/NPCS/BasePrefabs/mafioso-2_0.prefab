@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1613385992992945705}
   - component: {fileID: 2230914294054732787}
   - component: {fileID: 874805129007828786}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mafioso-2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

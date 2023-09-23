@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6981299285054165140}
   - component: {fileID: 1472693838096973556}
   - component: {fileID: 5678634687651998292}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: will-en-bici_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

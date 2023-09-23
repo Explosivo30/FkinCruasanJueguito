@@ -93,6 +93,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: traficante_0
       objectReference: {fileID: 0}
+    - target: {fileID: 1953733582069949953, guid: f9adaabbab41ee842a579c402e2427d5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8657602365139675736, guid: f9adaabbab41ee842a579c402e2427d5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: julio-borracho_0
       objectReference: {fileID: 0}
+    - target: {fileID: 3386451016779777971, guid: e5b75e21750bacf4fb22a4b453b97a13, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mafioso-1_0
       objectReference: {fileID: 0}
+    - target: {fileID: 6872690182772027148, guid: beb657d658508cf4590fa8fd3e814bc6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -100,7 +104,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2301529479713608224, guid: 7e7dd773da82b3240a20028ab0d1624b, type: 3}
       propertyPath: m_Name
-      value: MafiosoMovingNPC Variant
+      value: Mafioso1MovingNPC
       objectReference: {fileID: 0}
     - target: {fileID: 2809342832148117190, guid: 7e7dd773da82b3240a20028ab0d1624b, type: 3}
       propertyPath: m_Size.x

@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: will-en-bici_0
       objectReference: {fileID: 0}
+    - target: {fileID: 1978041873452228740, guid: bdc64d4a48c936b4b842829c4a577e6f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6981299285054165140, guid: bdc64d4a48c936b4b842829c4a577e6f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -100,7 +104,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2301529479713608224, guid: 7e7dd773da82b3240a20028ab0d1624b, type: 3}
       propertyPath: m_Name
-      value: WillBiciMovingNPC Variant
+      value: WillBiciMovingNPC
       objectReference: {fileID: 0}
     - target: {fileID: 2809342832148117190, guid: 7e7dd773da82b3240a20028ab0d1624b, type: 3}
       propertyPath: m_Size.x

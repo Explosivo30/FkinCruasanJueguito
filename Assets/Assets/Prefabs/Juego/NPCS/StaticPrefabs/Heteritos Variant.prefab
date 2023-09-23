@@ -133,6 +133,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pareja_0
       objectReference: {fileID: 0}
+    - target: {fileID: 8396946756322522508, guid: b5951530ffc83344ea96682b90a05534, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

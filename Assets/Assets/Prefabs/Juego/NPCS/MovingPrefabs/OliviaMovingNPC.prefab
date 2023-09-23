@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2301529479713608224, guid: 7e7dd773da82b3240a20028ab0d1624b, type: 3}
       propertyPath: m_Name
-      value: OliviaMovingNPC Variant
+      value: OliviaMovingNPC
       objectReference: {fileID: 0}
     - target: {fileID: 2809342832148117190, guid: 7e7dd773da82b3240a20028ab0d1624b, type: 3}
       propertyPath: m_Size.x
@@ -137,6 +137,10 @@ PrefabInstance:
     - target: {fileID: 6899354665599039855, guid: 0a7e53fb4b8760049b7769d66963e6ff, type: 3}
       propertyPath: m_Name
       value: olivia_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6899354665599039855, guid: 0a7e53fb4b8760049b7769d66963e6ff, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

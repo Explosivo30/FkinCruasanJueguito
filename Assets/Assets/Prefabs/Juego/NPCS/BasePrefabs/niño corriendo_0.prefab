@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8435038567747089009}
   - component: {fileID: 8072585220707100731}
   - component: {fileID: 7847481556330509938}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: "ni\xF1o corriendo_0"
   m_TagString: Untagged
   m_Icon: {fileID: 0}

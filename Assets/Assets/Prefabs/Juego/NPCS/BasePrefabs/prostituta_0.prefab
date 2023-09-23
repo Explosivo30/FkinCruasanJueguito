@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2868239049895065704}
   - component: {fileID: 4684991285068721609}
   - component: {fileID: 4398371363895471554}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: prostituta_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

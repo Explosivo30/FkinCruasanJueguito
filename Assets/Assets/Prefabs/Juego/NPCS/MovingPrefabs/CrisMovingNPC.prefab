@@ -98,6 +98,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cris_0
       objectReference: {fileID: 0}
+    - target: {fileID: 440131550612572048, guid: 6bdcfc92eae78294398102665e944e9e, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4718913570625118351, guid: 6bdcfc92eae78294398102665e944e9e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

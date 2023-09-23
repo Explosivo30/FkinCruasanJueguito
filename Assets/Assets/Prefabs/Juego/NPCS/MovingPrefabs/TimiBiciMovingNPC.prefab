@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2301529479713608224, guid: 7e7dd773da82b3240a20028ab0d1624b, type: 3}
       propertyPath: m_Name
-      value: TimiBiciMovingNPC Variant
+      value: TimiBiciMovingNPC
       objectReference: {fileID: 0}
     - target: {fileID: 2809342832148117190, guid: 7e7dd773da82b3240a20028ab0d1624b, type: 3}
       propertyPath: m_Size.x
@@ -137,6 +137,10 @@ PrefabInstance:
     - target: {fileID: 2909354767983734641, guid: 55e22e21b38710f4d80ea874d30b39a5, type: 3}
       propertyPath: m_Name
       value: timi-en-bici_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2909354767983734641, guid: 55e22e21b38710f4d80ea874d30b39a5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

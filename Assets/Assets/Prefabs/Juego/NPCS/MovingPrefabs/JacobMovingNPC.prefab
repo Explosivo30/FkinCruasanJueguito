@@ -98,6 +98,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jacob_0
       objectReference: {fileID: 0}
+    - target: {fileID: 2577721356966712774, guid: f3c945b5fd73b9e48a2645d31fccb9fa, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4817482878184513539, guid: f3c945b5fd73b9e48a2645d31fccb9fa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

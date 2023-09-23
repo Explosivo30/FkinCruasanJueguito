@@ -16,4 +16,4 @@ MonoBehaviour:
     asset: {fileID: 102900000, guid: 57c9156a03ddd8d46a38f4b1bbbd959f, type: 3}
     working: 1
     sceneToLoad: CuartelGeneral
-  roomPrefab: {fileID: 0}
+  roomPrefab: {fileID: 1347940569911408301, guid: 0e455875cc6891548bc8f5602c85bd72, type: 3}

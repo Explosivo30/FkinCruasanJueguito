@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1875056138615138039}
   - component: {fileID: 905053275292346927}
   - component: {fileID: 1649873077753163623}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: timi-en-bici_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

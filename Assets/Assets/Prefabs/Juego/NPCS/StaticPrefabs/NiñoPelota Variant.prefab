@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: timmy_0
       objectReference: {fileID: 0}
+    - target: {fileID: 2005449534099875677, guid: 0c5577d92b35dfa4b999a086d62de8ff, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6981387880412973843, guid: 0c5577d92b35dfa4b999a086d62de8ff, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

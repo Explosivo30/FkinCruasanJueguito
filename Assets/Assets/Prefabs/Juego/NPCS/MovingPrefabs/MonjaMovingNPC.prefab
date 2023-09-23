@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: monja_0
       objectReference: {fileID: 0}
+    - target: {fileID: 2256769766613359846, guid: 82310cfbd7f2e0948b6abb47ade338c7, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2296193790062039106, guid: 82310cfbd7f2e0948b6abb47ade338c7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -100,7 +104,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2301529479713608224, guid: 7e7dd773da82b3240a20028ab0d1624b, type: 3}
       propertyPath: m_Name
-      value: MonjaMovingNPC Variant
+      value: MonjaMovingNPC
       objectReference: {fileID: 0}
     - target: {fileID: 2809342832148117190, guid: 7e7dd773da82b3240a20028ab0d1624b, type: 3}
       propertyPath: m_Size.x
