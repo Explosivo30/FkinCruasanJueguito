@@ -13,10 +13,19 @@ public class AdditiveLoaderDrawer : PropertyDrawer
         var workingProperty = property.FindPropertyRelative("working");
         var asset = property.FindPropertyRelative("asset");
         var sceneToLoadProperty = property.FindPropertyRelative("sceneToLoad");
-
-        int sceneToLoad = SceneUtility.GetBuildIndexByScenePath(AssetDatabase.GetAssetPath(asset.objectReferenceValue));
-        workingProperty.boolValue = (sceneToLoad != -1);
-        sceneToLoadProperty.stringValue = asset.objectReferenceValue.name;
+        if(asset.objectReferenceValue != null)
+        {
+            int sceneToLoad = SceneUtility.GetBuildIndexByScenePath(AssetDatabase.GetAssetPath(asset.objectReferenceValue));
+            workingProperty.boolValue = (sceneToLoad != -1);
+            sceneToLoadProperty.stringValue = asset.objectReferenceValue.name;
+        }
+        else
+        {
+            workingProperty.boolValue = false;
+            sceneToLoadProperty.stringValue = "";
+        }
+        
+        
         
         foldout = EditorGUILayout.BeginFoldoutHeaderGroup(foldout, label);
         if (foldout)

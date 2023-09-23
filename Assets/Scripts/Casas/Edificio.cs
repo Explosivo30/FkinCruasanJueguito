@@ -39,9 +39,11 @@ public class Edificio : ScriptableObject
         {
             yield return new WaitForEndOfFrame();
         }
+        yield return new WaitForEndOfFrame();
         imageTransitioned = false;
+        loadedRoomScene = new(EdificioDecorations.CreateDecorations(roomPrefab).scene, true);
+        Debug.Log("loaded scene" + loadedRoomScene.Value.name);
         BlackScreenLoader.FadeToInvisible(() => { imageTransitioned = true; });
-        loadedRoomScene = new(EdificioDecorations.CreateDecorations(roomPrefab).scene,true);
         while (!imageTransitioned)
         {
             yield return new WaitForEndOfFrame();
