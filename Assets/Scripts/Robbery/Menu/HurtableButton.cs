@@ -38,6 +38,7 @@ public class HurtableButton : MonoBehaviour
         if(roll > probabilidadDeRobar)//fallo
         {
             Debug.LogWarning("Not Implemented: robar fallo", this);
+            GameManager.Instance.FalloHurto(0.6f);
             //TODO robar fallo logic
         }
         else//acierto

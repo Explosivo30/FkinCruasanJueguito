@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     //Singleton
     public static GameManager Instance { get; private set; }
-
     bool isOnHouse = false;
 
     //Weight
@@ -29,6 +29,11 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] List<Objeto> objetos;
 
+    [SerializeField] List<Transform> transformes;
+
+    [SerializeField]GameObject starsParent;
+
+    [SerializeField] List<Image> stars;
 
     private void Awake()
     {
@@ -47,6 +52,23 @@ public class GameManager : MonoBehaviour
         currentActionPoints = maxActionPoints;
 
         currentNoise = 0;
+
+        for (int i = 0; i < starsParent.transform.childCount; i++)
+        {
+            stars.Add(starsParent.transform.GetChild(i).GetComponent<Image>());
+        }
+
+        
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.G)) 
+        {
+            FalloHurto(1.7f);
+
+
+        }
     }
 
     public void RemoveItemInventory(Objeto obj)
@@ -69,6 +91,7 @@ public class GameManager : MonoBehaviour
             if (isOnHouse == true)
             {
                 ExitHouse();
+                GameOver();
             }
         }
     }
@@ -125,6 +148,10 @@ public class GameManager : MonoBehaviour
             }
         }
         currentMoney += total;
+        if(currentMoney >= maxMoney)
+        {
+            WinGame();
+        }
         return total;
     }
 
@@ -163,6 +190,59 @@ public class GameManager : MonoBehaviour
     public void CargarFinalDelJuego()
     {
         //Load Scene
+    }
+
+    public void FalloHurto(float starChase)
+    {
+        bool hasFinished = false;
+        float leftChase;
+        float totalChase = starChase;
+
+        for(int i = 0; i< stars.Count; i++)
+        {
+            if (stars[i].fillAmount < 1f)
+            {
+                leftChase = 1f - stars[i].fillAmount;
+                Debug.Log("Left Chase = " + leftChase);
+                if(leftChase >= totalChase)
+                {
+                    stars[i].fillAmount =+ totalChase;
+                    hasFinished = true;
+                    return;
+                }
+                else if(leftChase < totalChase)
+                {
+                    stars[i].fillAmount = 1f;
+                    totalChase -= leftChase;
+                    Debug.Log("Total Chase = "+ totalChase);   
+                    if(totalChase<= 0f)
+                    {
+                        hasFinished = true;
+                        return;
+                    }
+                }
+            }
+            if(hasFinished)
+            {
+                if (stars[i].fillAmount >= 1f)
+                {
+                    GameOver();
+                }
+                return;
+            }
+        }
+    }
+
+
+
+    public void GameOver()
+    {
+        //Load Lose Screen
+    }
+
+    public void WinGame()
+    {
+        //Load Win Screen
     }
 
 }
