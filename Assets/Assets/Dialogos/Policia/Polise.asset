@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5295775551358894246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad5306911cf2b5e47b0294ed7d06e629, type: 3}
+  m_Name: ca2a07f4-bd91-46c8-8bee-7ff01b81ff2c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  dialogo: 
+  respuestas:
+  - b7e5a35e-16d7-46e7-bb5e-ef78cee9d286
+  rect:
+    serializedVersion: 2
+    x: 361
+    y: 105
+    width: 200
+    height: 100
+--- !u!114 &-3114573510453154115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad5306911cf2b5e47b0294ed7d06e629, type: 3}
+  m_Name: 55812181-d438-4c10-b0b8-59babc12bc77
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  dialogo: 
+  respuestas:
+  - ca2a07f4-bd91-46c8-8bee-7ff01b81ff2c
+  rect:
+    serializedVersion: 2
+    x: 130
+    y: 156
+    width: 200
+    height: 100
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93760c4d873707f4097bac1200685602, type: 3}
+  m_Name: Polise
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -3114573510453154115}
+  - {fileID: -5295775551358894246}
+  - {fileID: 1161693762630351616}
+  newNodeOffset: {x: 200, y: 0}
+--- !u!114 &1161693762630351616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad5306911cf2b5e47b0294ed7d06e629, type: 3}
+  m_Name: b7e5a35e-16d7-46e7-bb5e-ef78cee9d286
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  dialogo: 
+  respuestas: []
+  rect:
+    serializedVersion: 2
+    x: 571
+    y: 218
+    width: 200
+    height: 100

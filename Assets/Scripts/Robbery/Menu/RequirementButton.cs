@@ -16,7 +16,7 @@ public class RequirementButton : DragObjectTarget
     {
         InventoryButton inventoryButton = eventData.pointerDrag.GetComponent<InventoryButton>();
         if(inventoryButton == null) return false;
-        //TODO añadir ruido y alarma por peligro
+        //  TODO añadir ruido y alarma por peligro
         if (inventoryButton.objeto.capacidades)
         {
             if (inventoryButton.objeto.capacidades.Value.Contains(requerimiento))

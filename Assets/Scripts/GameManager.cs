@@ -101,12 +101,9 @@ public class GameManager : MonoBehaviour
 
     public void AddToBag(Objeto obj)
     {
-        
         objetos.Add(obj);
         
-        Debug.Log("Inventory wheight = " + GetPeso() + "/" + maxWeight);
-        
-        
+        Debug.Log("Inventory wheight = " + GetPeso() + "/" + maxWeight);    
     }
 
     public void SellItemFromBag(Objeto obj)

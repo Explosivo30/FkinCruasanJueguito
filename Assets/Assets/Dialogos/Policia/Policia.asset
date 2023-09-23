@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93760c4d873707f4097bac1200685602, type: 3}
+  m_Name: Policia
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 1958667318251417815}
+  - {fileID: 1246328984172675180}
+  newNodeOffset: {x: 200, y: 0}
+--- !u!114 &1246328984172675180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad5306911cf2b5e47b0294ed7d06e629, type: 3}
+  m_Name: d1f49739-49a8-4255-a9e2-4350dbb0a843
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  dialogo: weaeaww
+  respuestas: []
+  rect:
+    serializedVersion: 2
+    x: 385
+    y: 119
+    width: 200
+    height: 200
+--- !u!114 &1958667318251417815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad5306911cf2b5e47b0294ed7d06e629, type: 3}
+  m_Name: 478bef2f-adb1-45d4-9b6e-35832236c046
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  dialogo: Eh,que haces intentando robar la pistola
+  respuestas:
+  - d1f49739-49a8-4255-a9e2-4350dbb0a843
+  rect:
+    serializedVersion: 2
+    x: 96
+    y: 141
+    width: 200
+    height: 100
