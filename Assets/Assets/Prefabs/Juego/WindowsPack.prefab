@@ -119,8 +119,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6bb282c2bf818043baafef38d78a71d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nombre: 
   requerimientos: []
   objetos: []
+  edificio: {fileID: 11400000, guid: 6689dbb615ac8f04cbdd4f4bfea3b9b8, type: 2}
   delitos: []
   peligros: []
   posibilidades:
@@ -309,8 +311,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6bb282c2bf818043baafef38d78a71d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nombre: 
   requerimientos: []
   objetos: []
+  edificio: {fileID: 11400000, guid: 6689dbb615ac8f04cbdd4f4bfea3b9b8, type: 2}
   delitos: []
   peligros: []
   posibilidades:
@@ -499,8 +503,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6bb282c2bf818043baafef38d78a71d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nombre: 
   requerimientos: []
   objetos: []
+  edificio: {fileID: 11400000, guid: 6689dbb615ac8f04cbdd4f4bfea3b9b8, type: 2}
   delitos: []
   peligros: []
   posibilidades:
@@ -689,8 +695,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6bb282c2bf818043baafef38d78a71d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nombre: 
   requerimientos: []
   objetos: []
+  edificio: {fileID: 11400000, guid: 6689dbb615ac8f04cbdd4f4bfea3b9b8, type: 2}
   delitos: []
   peligros: []
   posibilidades:
@@ -879,8 +887,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6bb282c2bf818043baafef38d78a71d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nombre: 
   requerimientos: []
   objetos: []
+  edificio: {fileID: 11400000, guid: 6689dbb615ac8f04cbdd4f4bfea3b9b8, type: 2}
   delitos: []
   peligros: []
   posibilidades:
@@ -1069,8 +1079,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6bb282c2bf818043baafef38d78a71d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nombre: 
   requerimientos: []
   objetos: []
+  edificio: {fileID: 11400000, guid: 6689dbb615ac8f04cbdd4f4bfea3b9b8, type: 2}
   delitos: []
   peligros: []
   posibilidades:
@@ -1306,8 +1318,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6bb282c2bf818043baafef38d78a71d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nombre: 
   requerimientos: []
   objetos: []
+  edificio: {fileID: 11400000, guid: 6689dbb615ac8f04cbdd4f4bfea3b9b8, type: 2}
   delitos: []
   peligros: []
   posibilidades:
@@ -1496,8 +1510,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6bb282c2bf818043baafef38d78a71d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nombre: 
   requerimientos: []
   objetos: []
+  edificio: {fileID: 11400000, guid: 6689dbb615ac8f04cbdd4f4bfea3b9b8, type: 2}
   delitos: []
   peligros: []
   posibilidades:
@@ -1686,8 +1702,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6bb282c2bf818043baafef38d78a71d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nombre: 
   requerimientos: []
   objetos: []
+  edificio: {fileID: 11400000, guid: 6689dbb615ac8f04cbdd4f4bfea3b9b8, type: 2}
   delitos: []
   peligros: []
   posibilidades:
@@ -1876,8 +1894,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6bb282c2bf818043baafef38d78a71d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nombre: 
   requerimientos: []
   objetos: []
+  edificio: {fileID: 11400000, guid: 6689dbb615ac8f04cbdd4f4bfea3b9b8, type: 2}
   delitos: []
   peligros: []
   posibilidades:
@@ -2066,8 +2086,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6bb282c2bf818043baafef38d78a71d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nombre: 
   requerimientos: []
   objetos: []
+  edificio: {fileID: 11400000, guid: 6689dbb615ac8f04cbdd4f4bfea3b9b8, type: 2}
   delitos: []
   peligros: []
   posibilidades:
@@ -2256,8 +2278,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6bb282c2bf818043baafef38d78a71d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nombre: 
   requerimientos: []
   objetos: []
+  edificio: {fileID: 11400000, guid: 6689dbb615ac8f04cbdd4f4bfea3b9b8, type: 2}
   delitos: []
   peligros: []
   posibilidades:
@@ -2446,8 +2470,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6bb282c2bf818043baafef38d78a71d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nombre: 
   requerimientos: []
   objetos: []
+  edificio: {fileID: 11400000, guid: 6689dbb615ac8f04cbdd4f4bfea3b9b8, type: 2}
   delitos: []
   peligros: []
   posibilidades:
@@ -2636,8 +2662,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6bb282c2bf818043baafef38d78a71d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nombre: 
   requerimientos: []
   objetos: []
+  edificio: {fileID: 11400000, guid: 6689dbb615ac8f04cbdd4f4bfea3b9b8, type: 2}
   delitos: []
   peligros: []
   posibilidades:
@@ -2826,8 +2854,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6bb282c2bf818043baafef38d78a71d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nombre: 
   requerimientos: []
   objetos: []
+  edificio: {fileID: 11400000, guid: 6689dbb615ac8f04cbdd4f4bfea3b9b8, type: 2}
   delitos: []
   peligros: []
   posibilidades:
@@ -3016,8 +3046,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6bb282c2bf818043baafef38d78a71d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nombre: 
   requerimientos: []
   objetos: []
+  edificio: {fileID: 11400000, guid: 6689dbb615ac8f04cbdd4f4bfea3b9b8, type: 2}
   delitos: []
   peligros: []
   posibilidades:

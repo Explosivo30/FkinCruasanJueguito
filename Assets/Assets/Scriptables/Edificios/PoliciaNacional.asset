@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loader:
     asset: {fileID: 102900000, guid: 57c9156a03ddd8d46a38f4b1bbbd959f, type: 3}
-    working: 0
-    sceneToLoad: 
+    working: 1
+    sceneToLoad: CuartelGeneral
   roomPrefab: {fileID: 0}

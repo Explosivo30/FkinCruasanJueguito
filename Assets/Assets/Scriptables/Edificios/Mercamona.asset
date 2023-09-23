@@ -15,5 +15,5 @@ MonoBehaviour:
   loader:
     asset: {fileID: 102900000, guid: f66e58307f34c2b4884b46f125f2f63c, type: 3}
     working: 1
-    sceneToLoad: 
+    sceneToLoad: Mercamona
   roomPrefab: {fileID: 0}
