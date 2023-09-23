@@ -66,12 +66,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4826467739743948596, guid: d9e0ba16c5524c34d8c55ed9f0a01a19, type: 3}
       propertyPath: objetos.Array.size
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4826467739743948596, guid: d9e0ba16c5524c34d8c55ed9f0a01a19, type: 3}
       propertyPath: objetos.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: add75ca584d6a7444875011567766b24, type: 2}
+    - target: {fileID: 4826467739743948596, guid: d9e0ba16c5524c34d8c55ed9f0a01a19, type: 3}
+      propertyPath: objetos.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: add75ca584d6a7444875011567766b24, type: 2}
+    - target: {fileID: 4826467739743948596, guid: d9e0ba16c5524c34d8c55ed9f0a01a19, type: 3}
+      propertyPath: objetos.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 37c7152140ea94f4896b3d97d93a3f6e, type: 2}
+    - target: {fileID: 4826467739743948596, guid: d9e0ba16c5524c34d8c55ed9f0a01a19, type: 3}
+      propertyPath: objetos.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: a53e86bb1499693459e7f2b03b2aafa3, type: 2}
+    - target: {fileID: 4826467739743948596, guid: d9e0ba16c5524c34d8c55ed9f0a01a19, type: 3}
+      propertyPath: objetos.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: b70a1d7676ef9234bbf42ade437ee7bc, type: 2}
+    - target: {fileID: 4826467739743948596, guid: d9e0ba16c5524c34d8c55ed9f0a01a19, type: 3}
+      propertyPath: objetos.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: b46d084bad896774b84aa990e147efe7, type: 2}
     - target: {fileID: 5423861101045361466, guid: d9e0ba16c5524c34d8c55ed9f0a01a19, type: 3}
       propertyPath: m_Name
       value: Putilla Variant
