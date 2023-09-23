@@ -32,12 +32,20 @@ public class ClickManager : MonoBehaviour
     public void SetOptions(Robable sr)
     {
         robable = sr;
+        SetAllInventoriesInactive();
         gameObject.SetActive (true);
         transform.position = Input.mousePosition;
         for (int i = 0; i < options.Length; i++)
         {
             options[i].SetActive(sr.posibilidades[i]);
         }
+    }
+
+    public static void SetAllInventoriesInactive()
+    {
+        MenuDeHurto.instance.HideMenu();
+        ShowInventoryManager.HideInventory();
+        RequirementManager.HideRequirements();
     }
 
     #region

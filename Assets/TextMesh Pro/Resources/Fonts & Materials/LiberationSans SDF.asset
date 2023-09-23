@@ -120,7 +120,7 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _FaceDilate: 0.5
+    - _FaceDilate: 0.1
     - _FaceUVSpeedX: 0
     - _FaceUVSpeedY: 0
     - _GlossMapScale: 0
@@ -139,15 +139,15 @@ Material:
     - _OutlineSoftness: 0
     - _OutlineUVSpeedX: 0
     - _OutlineUVSpeedY: 0
-    - _OutlineWidth: 0.476
+    - _OutlineWidth: 0
     - _Parallax: 0.005
     - _PerspectiveFilter: 0.875
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _Reflectivity: 10
-    - _ScaleRatioA: 0.7735281
-    - _ScaleRatioB: 0.28125
-    - _ScaleRatioC: 0.28125
+    - _ScaleRatioA: 0.9
+    - _ScaleRatioB: 0.64125
+    - _ScaleRatioC: 0.64125
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0

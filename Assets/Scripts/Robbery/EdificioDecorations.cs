@@ -22,6 +22,9 @@ public class EdificioDecorations : MonoBehaviour
 
     public static GameObject CreateDecorations(GameObject prefab)
     {
-        return Instantiate(prefab, instance.edificioCenter);
+        //TODO descubrir porque decorations no se instancia
+        GameObject g = Instantiate(prefab, instance.edificioCenter);
+        Debug.Log("created" + g, g);
+        return g;
     }
 }

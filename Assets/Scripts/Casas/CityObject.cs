@@ -33,6 +33,7 @@ public class CityObject : MonoBehaviour
         if (instance)
         {
             instance.Value.city.SetActive(true);
+            Debug.Log("City Activated");
         }
         else
         {
@@ -45,6 +46,7 @@ public class CityObject : MonoBehaviour
         if (instance)
         {
             instance.Value.city.SetActive(true);
+            Debug.Log("City deactivated");
         }
         else
         {

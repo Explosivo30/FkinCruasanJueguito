@@ -44,9 +44,14 @@ public class RequirementManager : MonoBehaviour
             button.target = robable;
         }
     }
+    public static void HideRequirements()
+    {
+        instance.HideMenu();
+    }
 
     public void HideMenu()
     {
+        target = new(null, false);
         foreach (RequirementButton button in buttons)
         {
             Destroy(button.gameObject);
