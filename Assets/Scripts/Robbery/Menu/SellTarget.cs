@@ -44,7 +44,7 @@ public class SellTarget : DragObjectTarget
             Debug.Log("no sellInventory");
             return;
         }
-        for (int i = instance.buttons.Count; i >= 0; i--)
+        for (int i = instance.buttons.Count-1; i >= 0; i--)
         {
             Destroy(instance.buttons[i]);
         }
