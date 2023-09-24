@@ -18,4 +18,11 @@ public class HUD : MonoBehaviour
         currentMoney.text = GameManager.Instance.currentMoney.ToString();
         maxDebt.text = GameManager.Instance.maxMoney.ToString();
     }
+
+
+    private void FixedUpdate()
+    {
+        currentMoney.text = GameManager.Instance.currentMoney.ToString();
+        currentActionPoints.text = GameManager.Instance.currentActionPoints.ToString();
+    }
 }
