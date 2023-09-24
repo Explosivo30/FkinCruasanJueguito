@@ -137,6 +137,11 @@ public class GameManager : MonoBehaviour
         currentMoney += obj.sellPrice;
         
         objetos.Remove(obj);
+
+        if (currentMoney >= maxMoney)
+        {
+            WinGame();
+        }
     }
 
     public int SellAllItems()
@@ -154,6 +159,7 @@ public class GameManager : MonoBehaviour
         if(currentMoney >= maxMoney)
         {
             WinGame();
+            return total;
         }
         return total;
     }
