@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] List<Image> stars;
 
+    bool isNight = false;
+
     private void Awake()
     {
 
@@ -60,15 +62,6 @@ public class GameManager : MonoBehaviour
         
     }
 
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.G)) 
-        {
-            FalloHurto(1.7f);
-
-
-        }
-    }
 
     public void RemoveItemInventory(Objeto obj)
     {
@@ -85,6 +78,13 @@ public class GameManager : MonoBehaviour
     public void ReduceActionPoints(int reductionPoints)
     {
         currentActionPoints -= reductionPoints;
+
+        //TODO Enter NightMode
+        if(!isNight && currentActionPoints < maxActionPoints / 2)
+        {
+            
+        }
+
         if (currentActionPoints <= 0)
         {
             if (isOnHouse == true)
@@ -167,6 +167,10 @@ public class GameManager : MonoBehaviour
         return objetosUtiles;
     }
 
+    public List<Objeto> AllInventoryReturned()
+    {
+        return objetos;
+    }
 
     public void QuitarDinero(int precio)
     {
