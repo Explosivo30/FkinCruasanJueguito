@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4870399938106770846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7406141403536083845}
+  - component: {fileID: 31233371313053619}
+  - component: {fileID: 3165039504267986099}
+  - component: {fileID: 24029308915741753}
+  - component: {fileID: 4535117577256660826}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7406141403536083845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4870399938106770846}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.0122528, y: 8.037616, z: 0.014064431}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &31233371313053619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4870399938106770846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52b0706906f97fd4ab357a483c026029, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxWeight: 0
+  maxDays: 0
+  maxMoney: 2000
+  maxActionPoints: 100
+  maxNoise: 0
+  objetos: []
+  transformes: []
+  starsParent: {fileID: 0}
+  stars: []
+  endEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3165039504267986099}
+        m_TargetAssemblyTypeName: Hedenrag.SceneLoader.SceneLoaderAsync, SceneLoaderAssembly
+        m_MethodName: LoadSceneAsync
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  winEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 24029308915741753}
+        m_TargetAssemblyTypeName: Hedenrag.SceneLoader.SceneLoaderAsync, SceneLoaderAssembly
+        m_MethodName: LoadSceneAsync
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  nightEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4535117577256660826}
+        m_TargetAssemblyTypeName: Hedenrag.SceneLoader.SceneLoaderAsync, SceneLoaderAssembly
+        m_MethodName: LoadSceneAsync
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3165039504267986099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4870399938106770846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad5ccd36e58d51d48b55430157484d73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneAssets: {fileID: 102900000, guid: 1089fbeb8c80a2345baa6324d004aed1, type: 3}
+  sceneName: EndGame
+--- !u!114 &24029308915741753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4870399938106770846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad5ccd36e58d51d48b55430157484d73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneAssets: {fileID: 102900000, guid: d4f947ecb0441c148bec4365eb57f043, type: 3}
+  sceneName: WinGame
+--- !u!114 &4535117577256660826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4870399938106770846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad5ccd36e58d51d48b55430157484d73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneAssets: {fileID: 102900000, guid: 5c13332aae0f10448984fc84c589ef6b, type: 3}
+  sceneName: Principal_De_Noche_Buena
