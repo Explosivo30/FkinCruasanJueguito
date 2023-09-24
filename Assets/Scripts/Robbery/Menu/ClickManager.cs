@@ -88,7 +88,7 @@ public class ClickManager : MonoBehaviour
     public void Comerciar()
     {
         ShowInventoryManager.ShowInventory();
-        //TODO ShowSellManager.ShowSell();
+        SellTarget.ShowBuySellInventory(robable);
     }
 
     #endregion
