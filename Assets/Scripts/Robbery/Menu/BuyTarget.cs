@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Android;
 using UnityEngine.EventSystems;
 
 public class BuyTarget : DragObjectTarget
@@ -21,6 +22,7 @@ public class BuyTarget : DragObjectTarget
 
     [SerializeField] private GameObject SellingItemButtonPrefab;
     [SerializeField] Transform sellContent;
+    [SerializeField] public TMPro.TextMeshProUGUI precioInventario;
 
 
     protected override bool OnDropRequirements(PointerEventData eventData)
@@ -56,10 +58,16 @@ public class BuyTarget : DragObjectTarget
             si.objetoALaVenta = obj;
             si.precio.text = obj.buyPrice.ToString() + " EUR";
         }
+        instance.precioInventario.text = GameManager.Instance.ShowPriceSellAllInventory().ToString();
     }
 
     public static void HideBuySellInventory()
     {
         instance.gameObject.SetActive(false);
+    }
+
+    public void SellAllInventory()
+    {
+        GameManager.Instance.SellAllItems();
     }
 }

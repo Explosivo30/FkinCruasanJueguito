@@ -9,5 +9,6 @@ public class SellingItem : MonoBehaviour
     [SerializeField] public Image objectImage;
     [SerializeField] public TMPro.TextMeshProUGUI nombre;
     [SerializeField] public TMPro.TextMeshProUGUI precio;
-    [NonSerialized] public Objeto objetoALaVenta;
+    [NonSerialized] 
+    public Objeto objetoALaVenta;
 }

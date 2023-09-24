@@ -154,6 +154,20 @@ public class GameManager : MonoBehaviour
         return total;
     }
 
+    public int ShowPriceSellAllInventory()
+    {
+        int total = 0;
+        for (int i = objetos.Count; i >= 0; i--)
+        {
+            if (!objetos[i].capacidades)
+            {
+                total += objetos[i].sellPrice;
+            }
+        }
+
+        return total;
+    }
+
     public List<Objeto> DevolverObjeto()
     {
         List<Objeto> objetosUtiles = new List<Objeto>();
