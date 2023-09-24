@@ -65,9 +65,25 @@ PrefabInstance:
       value: 1.0955204
       objectReference: {fileID: 0}
     - target: {fileID: 4826467739743948596, guid: d9e0ba16c5524c34d8c55ed9f0a01a19, type: 3}
+      propertyPath: objetos.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826467739743948596, guid: d9e0ba16c5524c34d8c55ed9f0a01a19, type: 3}
       propertyPath: posibilidades.value
       value: 32
       objectReference: {fileID: 0}
+    - target: {fileID: 4826467739743948596, guid: d9e0ba16c5524c34d8c55ed9f0a01a19, type: 3}
+      propertyPath: objetos.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 90c07666ca6863446b6b46c620a94d56, type: 2}
+    - target: {fileID: 4826467739743948596, guid: d9e0ba16c5524c34d8c55ed9f0a01a19, type: 3}
+      propertyPath: objetos.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 427317ddcf271e04497d24a77017c70d, type: 2}
+    - target: {fileID: 4826467739743948596, guid: d9e0ba16c5524c34d8c55ed9f0a01a19, type: 3}
+      propertyPath: objetos.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 2fe6dcc7937528c4ea8cb40b41978980, type: 2}
     - target: {fileID: 5423861101045361466, guid: d9e0ba16c5524c34d8c55ed9f0a01a19, type: 3}
       propertyPath: m_Name
       value: Traficante Variant
