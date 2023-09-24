@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
+    path: Assets/Scenes/EscenasEdificios/MainMenuScene.unity
+    guid: c066f368a14cff7408c00c306e811dca
   - enabled: 1
     path: Assets/TOOLS/Hedenrag/SceneLoader/Build/SceneLoaderEmptyScene.unity
     guid: a8cb78805121b7d449d397188bef6596
@@ -32,9 +32,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EscenasEdificios/Mercamona.unity
     guid: f66e58307f34c2b4884b46f125f2f63c
-  - enabled: 1
-    path: Assets/Scenes/EscenasEdificios/MainMenuScene.unity
-    guid: c066f368a14cff7408c00c306e811dca
   - enabled: 1
     path: Assets/Scenes/EscenasEdificios/Principal_De_Dia.unity
     guid: f101acf86569cfa43a200251ac58d79b
