@@ -16,8 +16,9 @@ public class BuyTarget : DragObjectTarget
         if(GameManager.Instance.currentMoney < item.objetoALaVenta.buyPrice) { return false; }
         GameManager.Instance.QuitarDinero(item.objetoALaVenta.buyPrice);
         GameManager.Instance.AddToBag(item.objetoALaVenta);
+        ShowInventoryManager.ShowInventory();
         //TODO reload seller
-        return true;
+        return false;
     }
 
     

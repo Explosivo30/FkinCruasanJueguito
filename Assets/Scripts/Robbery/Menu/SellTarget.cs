@@ -39,6 +39,7 @@ public class SellTarget : DragObjectTarget
     List<GameObject> buttons = new();
     public static void ShowBuySellInventory(Robable robable)
     {
+        instance.gameObject.SetActive(true);
         if (instance == null)
         {
             Debug.Log("no sellInventory");
@@ -52,6 +53,7 @@ public class SellTarget : DragObjectTarget
         foreach (Objeto obj in robable.objetos)
         {
             GameObject g = Instantiate(instance.SellingItemButtonPrefab, instance.sellContent);
+            instance.buttons.Add(g);
             SellingItem si = g.GetComponent<SellingItem>();
             si.objectImage.sprite = obj.image;
             si.nombre.text = obj.name;
@@ -68,7 +70,8 @@ public class SellTarget : DragObjectTarget
 
     public void SellAllInventory()
     {
-        GameManager.Instance.SellAllItems();
+        GameManager.Instance.currentMoney += GameManager.Instance.SellAllItems();
+        precioInventario.text = GameManager.Instance.ShowPriceSellAllInventory().ToString();
         //TODO maybe reduce actions
     }
 }
