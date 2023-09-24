@@ -26,7 +26,6 @@ public class ShowInventoryManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
-            return;
         }
         HideInventory();
     }
@@ -58,7 +57,7 @@ public class ShowInventoryManager : MonoBehaviour
         {
             foreach (var obj in instance.Value.ContextItems)
             {
-                Destroy(obj.gameObject);
+                Destroy(obj);
             }
             instance.Value.ContextItems.Clear();
         }
