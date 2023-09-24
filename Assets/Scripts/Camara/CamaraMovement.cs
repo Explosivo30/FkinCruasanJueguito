@@ -6,7 +6,7 @@ public class CamaraMovement : MonoBehaviour
 {
     [SerializeField] float force = 8f;
     [SerializeField] Rigidbody rb;
-    void Update()
+    void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.D))
         {
