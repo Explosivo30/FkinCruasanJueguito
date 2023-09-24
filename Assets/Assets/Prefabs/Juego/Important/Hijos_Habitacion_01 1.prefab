@@ -104,8 +104,8 @@ MonoBehaviour:
   delitos: []
   peligros: []
   posibilidades:
-    layer: {fileID: 0}
-    value: 0
+    layer: {fileID: 11400000, guid: a5e6f70837d41494d99f4764abeceebc, type: 2}
+    value: 2
   investigateLayer:
     layer: {fileID: 0}
     value: 0
@@ -234,8 +234,8 @@ MonoBehaviour:
   delitos: []
   peligros: []
   posibilidades:
-    layer: {fileID: 0}
-    value: 0
+    layer: {fileID: 11400000, guid: a5e6f70837d41494d99f4764abeceebc, type: 2}
+    value: 2
   investigateLayer:
     layer: {fileID: 0}
     value: 0
@@ -364,8 +364,8 @@ MonoBehaviour:
   delitos: []
   peligros: []
   posibilidades:
-    layer: {fileID: 0}
-    value: 0
+    layer: {fileID: 11400000, guid: a5e6f70837d41494d99f4764abeceebc, type: 2}
+    value: 2
   investigateLayer:
     layer: {fileID: 0}
     value: 0
@@ -494,8 +494,8 @@ MonoBehaviour:
   delitos: []
   peligros: []
   posibilidades:
-    layer: {fileID: 0}
-    value: 0
+    layer: {fileID: 11400000, guid: a5e6f70837d41494d99f4764abeceebc, type: 2}
+    value: 2
   investigateLayer:
     layer: {fileID: 0}
     value: 0

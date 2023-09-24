@@ -307,7 +307,7 @@ MonoBehaviour:
   objetos:
   - {fileID: 11400000, guid: 90c07666ca6863446b6b46c620a94d56, type: 2}
   transformes: []
-  starsParent: {fileID: 768171636}
+  starsParent: {fileID: 1284549516}
   stars: []
 --- !u!1 &464156323
 GameObject:
@@ -424,11 +424,6 @@ Transform:
   - {fileID: 282679195}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &768171636 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7958041406534040191, guid: 52641e363720f494795ba347c1cddfa5, type: 3}
-  m_PrefabInstance: {fileID: 1902625367}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1145423301
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,6 +552,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1284549516 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 301088261341722630, guid: 52641e363720f494795ba347c1cddfa5, type: 3}
+  m_PrefabInstance: {fileID: 1902625367}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1398198611
 GameObject:
   m_ObjectHideFlags: 0
@@ -1014,6 +1014,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1593339198729846017, guid: 7e6a13e23d4ef7e40b9b5ec618adef36, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2469771639281251525, guid: 7e6a13e23d4ef7e40b9b5ec618adef36, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1240,7 +1244,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7095484238973308306, guid: 7e6a13e23d4ef7e40b9b5ec618adef36, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000005615829
+      value: 0.00004796503
       objectReference: {fileID: 0}
     - target: {fileID: 7200318933008062125, guid: 7e6a13e23d4ef7e40b9b5ec618adef36, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2639,9 +2643,9 @@ SceneRoots:
   - {fileID: 1612660483}
   - {fileID: 390483160500813802}
   - {fileID: 1398198612}
+  - {fileID: 1902625367}
   - {fileID: 1661491952}
   - {fileID: 393867305}
   - {fileID: 464156327}
   - {fileID: 1145423303}
   - {fileID: 1457802304}
-  - {fileID: 1902625367}

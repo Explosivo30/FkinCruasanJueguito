@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8506464940527413924}
   - component: {fileID: 3445356681099325672}
   - component: {fileID: 7462298185886422623}
+  - component: {fileID: 4802475148930300388}
   m_Layer: 6
   m_Name: Cube.015
   m_TagString: Untagged
@@ -99,13 +100,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombre: 
   requerimientos: []
-  objetos: []
+  objetos:
+  - {fileID: 11400000, guid: 10cadc52f99392e4581a949927b283fa, type: 2}
+  - {fileID: 11400000, guid: 277277f423226644f98fbe20f14cc06d, type: 2}
+  - {fileID: 11400000, guid: e746e08b3f8f2ca4982fb98850c6ad25, type: 2}
+  - {fileID: 11400000, guid: aeef5f1cadaa2a94eb1acc9a459ae4fc, type: 2}
+  - {fileID: 11400000, guid: 54791de9d956f4b4c83a17ec3ab0a926, type: 2}
+  - {fileID: 11400000, guid: 360aefe134ebf31469cae7943de09224, type: 2}
+  - {fileID: 11400000, guid: dce6bccab5f6bd14391d579c0c493845, type: 2}
   edificio: {fileID: 0}
   delitos: []
   peligros: []
   posibilidades:
-    layer: {fileID: 0}
-    value: 0
+    layer: {fileID: 11400000, guid: a5e6f70837d41494d99f4764abeceebc, type: 2}
+    value: 2
   investigateLayer:
     layer: {fileID: 0}
     value: 0
@@ -130,6 +138,35 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.01936837, y: 0.018, z: 0.015637193}
   m_Center: {x: 0.00068418495, y: 4.656613e-10, z: -0.0012074048}
+--- !u!114 &4802475148930300388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634316624319791631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3445356681099325672}
+          m_TargetAssemblyTypeName: Robable, Assembly-CSharp
+          m_MethodName: CreateSelection
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &6003475127266584104
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,6 +180,7 @@ GameObject:
   - component: {fileID: 6710576289246263444}
   - component: {fileID: 5847115486315266638}
   - component: {fileID: 1510610016878911887}
+  - component: {fileID: 2475931911640158916}
   m_Layer: 6
   m_Name: Cube.011
   m_TagString: Untagged
@@ -229,13 +267,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombre: 
   requerimientos: []
-  objetos: []
+  objetos:
+  - {fileID: 11400000, guid: 570ed20628a48af4ca55e6204840f86b, type: 2}
+  - {fileID: 11400000, guid: 3eb74c07fa6e28f418f6c46d322885ad, type: 2}
+  - {fileID: 11400000, guid: b70a1d7676ef9234bbf42ade437ee7bc, type: 2}
+  - {fileID: 11400000, guid: 9ae11910f4508ee41b19886bc2425284, type: 2}
+  - {fileID: 11400000, guid: b3834ee254da3304499625e86dfced65, type: 2}
   edificio: {fileID: 0}
   delitos: []
   peligros: []
   posibilidades:
-    layer: {fileID: 0}
-    value: 0
+    layer: {fileID: 11400000, guid: a5e6f70837d41494d99f4764abeceebc, type: 2}
+    value: 2
   investigateLayer:
     layer: {fileID: 0}
     value: 0
@@ -260,6 +303,35 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.010751478, y: 0.015, z: 0.015}
   m_Center: {x: 0.0027012404, y: -8.0503236e-11, z: 1.43951e-17}
+--- !u!114 &2475931911640158916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6003475127266584104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5847115486315266638}
+          m_TargetAssemblyTypeName: Robable, Assembly-CSharp
+          m_MethodName: CreateSelection
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &7509727317148214035
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,6 +345,7 @@ GameObject:
   - component: {fileID: 5564093027103117714}
   - component: {fileID: 352166903814044652}
   - component: {fileID: 4950911935338401345}
+  - component: {fileID: 4376359842643265580}
   m_Layer: 6
   m_Name: Cube.010
   m_TagString: Untagged
@@ -360,13 +433,17 @@ MonoBehaviour:
   nombre: 
   requerimientos: []
   objetos:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: add75ca584d6a7444875011567766b24, type: 2}
+  - {fileID: 11400000, guid: ecf1e814e11427b41801d00edb80ac6a, type: 2}
+  - {fileID: 11400000, guid: 5085f6c04e1dc344289527c9e3146774, type: 2}
+  - {fileID: 11400000, guid: 2c72c8cf2dd677748a578e2370a7bc37, type: 2}
+  - {fileID: 11400000, guid: 3d5dea33cfa84e34ea5b1160f1c8f22d, type: 2}
   edificio: {fileID: 0}
   delitos: []
   peligros: []
   posibilidades:
-    layer: {fileID: 0}
-    value: 0
+    layer: {fileID: 11400000, guid: a5e6f70837d41494d99f4764abeceebc, type: 2}
+    value: 2
   investigateLayer:
     layer: {fileID: 0}
     value: 0
@@ -391,6 +468,35 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0072346576, y: 0.007, z: 0.008089286}
   m_Center: {x: -2.9024415e-18, y: 1.6231634e-11, z: -0.00054464315}
+--- !u!114 &4376359842643265580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7509727317148214035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 352166903814044652}
+          m_TargetAssemblyTypeName: Robable, Assembly-CSharp
+          m_MethodName: CreateSelection
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &8311844719283298614
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,6 +510,7 @@ GameObject:
   - component: {fileID: 5326058695776812697}
   - component: {fileID: 6182568046318155723}
   - component: {fileID: 6889363329608803889}
+  - component: {fileID: 5948920747695475385}
   m_Layer: 6
   m_Name: Cube.002
   m_TagString: Untagged
@@ -490,13 +597,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombre: 
   requerimientos: []
-  objetos: []
+  objetos:
+  - {fileID: 11400000, guid: 277277f423226644f98fbe20f14cc06d, type: 2}
+  - {fileID: 11400000, guid: 3eb74c07fa6e28f418f6c46d322885ad, type: 2}
+  - {fileID: 11400000, guid: e746e08b3f8f2ca4982fb98850c6ad25, type: 2}
+  - {fileID: 11400000, guid: 711d53ee09ac5734db0b0d1f084896df, type: 2}
+  - {fileID: 11400000, guid: f3a33baeafdd2ce4ea2d2c85de0409b4, type: 2}
+  - {fileID: 11400000, guid: b2eaf53529839a8489c9e91aa6069dda, type: 2}
+  - {fileID: 11400000, guid: bc2a43c88e3942b44a8eb1c1990c561f, type: 2}
+  - {fileID: 11400000, guid: 59610d9f6e6556f4fb476952ba8fe23b, type: 2}
   edificio: {fileID: 0}
   delitos: []
   peligros: []
   posibilidades:
-    layer: {fileID: 0}
-    value: 0
+    layer: {fileID: 11400000, guid: a5e6f70837d41494d99f4764abeceebc, type: 2}
+    value: 2
   investigateLayer:
     layer: {fileID: 0}
     value: 0
@@ -521,6 +636,35 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.02121334, y: 0.020499228, z: 0.02}
   m_Center: {x: 0.000000895477, y: -0.000249614, z: 3.2581222e-11}
+--- !u!114 &5948920747695475385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8311844719283298614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6182568046318155723}
+          m_TargetAssemblyTypeName: Robable, Assembly-CSharp
+          m_MethodName: CreateSelection
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &8980719666759456846
 GameObject:
   m_ObjectHideFlags: 0

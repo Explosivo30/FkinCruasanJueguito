@@ -17,7 +17,7 @@ public class CameraRaycast : MonoBehaviour
             Vector3 mousePos = Input.mousePosition;
             if(Physics.Raycast(cam.ScreenPointToRay(mousePos), out RaycastHit hit))
             {
-                Debug.Log(hit.collider);
+                Debug.Log(hit.collider,hit.collider.gameObject);
             }
         }
     }
