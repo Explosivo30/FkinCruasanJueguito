@@ -62,7 +62,6 @@ public class GameManager : MonoBehaviour
         
     }
 
-
     public void RemoveItemInventory(Objeto obj)
     {
         for(int i = 0; i < objetos.Count; i++)
@@ -138,7 +137,7 @@ public class GameManager : MonoBehaviour
     public int SellAllItems()
     {
         int total = 0;
-        for (int i = objetos.Count; i >= 0; i--)
+        for (int i = objetos.Count - 1; i >= 0; i--)
         {
             if (!objetos[i].capacidades)
             {
@@ -157,7 +156,7 @@ public class GameManager : MonoBehaviour
     public int ShowPriceSellAllInventory()
     {
         int total = 0;
-        for (int i = objetos.Count; i >= 0; i--)
+        for (int i = objetos.Count-1; i >= 0; i--)
         {
             if (!objetos[i].capacidades)
             {
@@ -220,10 +219,9 @@ public class GameManager : MonoBehaviour
             if (stars[i].fillAmount < 1f)
             {
                 leftChase = 1f - stars[i].fillAmount;
-                Debug.Log("Left Chase = " + leftChase);
                 if(leftChase >= totalChase)
                 {
-                    stars[i].fillAmount =+ totalChase;
+                    stars[i].fillAmount += totalChase;
                     hasFinished = true;
                     return;
                 }
@@ -231,7 +229,7 @@ public class GameManager : MonoBehaviour
                 {
                     stars[i].fillAmount = 1f;
                     totalChase -= leftChase;
-                    Debug.Log("Total Chase = "+ totalChase);   
+                       
                     if(totalChase<= 0f)
                     {
                         hasFinished = true;
@@ -241,7 +239,7 @@ public class GameManager : MonoBehaviour
             }
             if(hasFinished)
             {
-                if (stars[i].fillAmount >= 1f)
+                if (stars[stars.Count].fillAmount >= 1f)
                 {
                     GameOver();
                 }

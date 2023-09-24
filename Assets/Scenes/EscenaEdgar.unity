@@ -733,7 +733,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 442496584395892054, guid: 52641e363720f494795ba347c1cddfa5, type: 3}
       propertyPath: m_MatchWidthOrHeight
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1054220934761687710, guid: 52641e363720f494795ba347c1cddfa5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -775,12 +775,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3481907996936697052, guid: 52641e363720f494795ba347c1cddfa5, type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3505182967665986604, guid: 52641e363720f494795ba347c1cddfa5, type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3736090715346453983, guid: 52641e363720f494795ba347c1cddfa5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -207
+      objectReference: {fileID: 0}
+    - target: {fileID: 3736090715346453983, guid: 52641e363720f494795ba347c1cddfa5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 466
+      objectReference: {fileID: 0}
     - target: {fileID: 7105532530294047991, guid: 52641e363720f494795ba347c1cddfa5, type: 3}
       propertyPath: m_Name
       value: HUD
       objectReference: {fileID: 0}
+    - target: {fileID: 8824832994001484349, guid: 52641e363720f494795ba347c1cddfa5, type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4604886490962497556, guid: 52641e363720f494795ba347c1cddfa5, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52641e363720f494795ba347c1cddfa5, type: 3}
