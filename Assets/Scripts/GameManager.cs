@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 {
     //Singleton
     public static GameManager Instance { get; private set; }
-    bool isOnHouse = false;
+    public bool isOnHouse = false;
     //Weight
     [SerializeField] int maxWeight;
     public int MaxWeight => maxWeight;
@@ -26,8 +26,8 @@ public class GameManager : MonoBehaviour
     [NonSerialized] public int currentActionPoints;
 
     //Noise
-    [SerializeField] int maxNoise;
-    int currentNoise;
+    [SerializeField] float maxNoise;
+    float currentNoise;
 
     [SerializeField] List<Objeto> objetos;
 
@@ -102,13 +102,14 @@ public class GameManager : MonoBehaviour
         {
             if (isOnHouse == true)
             {
-                GameOver();
+                
             }
+            GameOver();
         }
     }
 
 
-    public void EnterHouse(int maxNoise, int currentNoiseEnter = 0)
+    public void EnterHouse(float maxNoise, float currentNoiseEnter = 0)
     {
         isOnHouse = true;
         MaxNoise(maxNoise);
@@ -118,17 +119,26 @@ public class GameManager : MonoBehaviour
     public void ExitHouse()
     {
         isOnHouse = false;
+        currentNoise = 0f;
         //Load Street Map
     }
 
 
     public void ResetNoise()
     {
-        currentNoise = 0;
+        currentNoise = 0f;
     }
 
+    public void AddRuido(float sumarRuido)
+    {
+        currentNoise += sumarRuido;
+        if(currentNoise>= maxNoise)
+        {
+            ExitHouse();
+        }
+    }
 
-    public void MaxNoise(int maxNoise)
+    public void MaxNoise(float maxNoise)
     {
         this.maxNoise = maxNoise;
     }
