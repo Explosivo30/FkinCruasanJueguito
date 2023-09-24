@@ -273,6 +273,7 @@ GameObject:
   - component: {fileID: 8427468316409817136}
   - component: {fileID: 4701219676755027493}
   - component: {fileID: 6555150968224892232}
+  - component: {fileID: 2466367291469591777}
   m_Layer: 6
   m_Name: polySurface23
   m_TagString: Untagged
@@ -359,13 +360,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombre: 
   requerimientos: []
-  objetos: []
+  objetos:
+  - {fileID: 11400000, guid: 463688cabc8480b4cad393a41b1b8473, type: 2}
+  - {fileID: 11400000, guid: f93b8bdd66bfc0741b186fa6b41d90cd, type: 2}
+  - {fileID: 11400000, guid: 8a5867515873d3141a18b90d2d22076b, type: 2}
+  - {fileID: 11400000, guid: a53e86bb1499693459e7f2b03b2aafa3, type: 2}
+  - {fileID: 11400000, guid: 3eb5b15e379a0ed44b8acbcc350dfbfb, type: 2}
+  - {fileID: 11400000, guid: 29fb181aad48ec0458f22976481e3a71, type: 2}
+  - {fileID: 11400000, guid: 85def4ec19cfd8c4799d39555be5df11, type: 2}
   edificio: {fileID: 0}
   delitos: []
   peligros: []
   posibilidades:
-    layer: {fileID: 0}
-    value: 0
+    layer: {fileID: 11400000, guid: a5e6f70837d41494d99f4764abeceebc, type: 2}
+    value: 2
   investigateLayer:
     layer: {fileID: 0}
     value: 0
@@ -390,6 +398,35 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.27917, y: 5.223034, z: 15.828348}
   m_Center: {x: 15.83325, y: 3.8261733, z: -0.10114312}
+--- !u!114 &2466367291469591777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4738577549797023447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4701219676755027493}
+          m_TargetAssemblyTypeName: Robable, Assembly-CSharp
+          m_MethodName: CreateSelection
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &4835658907683604945
 GameObject:
   m_ObjectHideFlags: 0
