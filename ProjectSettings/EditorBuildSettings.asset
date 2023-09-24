@@ -38,7 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EscenasEdificios/Principal_De_Dia.unity
     guid: f101acf86569cfa43a200251ac58d79b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/EscenasEdificios/Principal_De_Noche.unity
     guid: bc3ccb293f2686d48be9320d79607596
+  - enabled: 1
+    path: Assets/Scenes/Intstrucciones.unity
+    guid: 70b2376dea04e0240acf26b56a5254bd
   m_configObjects: {}
