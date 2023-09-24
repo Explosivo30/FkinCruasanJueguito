@@ -14,7 +14,7 @@ public class Edificio : ScriptableObject
     [SerializeField] AdditiveLoader loader;
     [SerializeField] GameObject roomPrefab;
 
-    Optional<Scene> loadedRoomScene = new Optional<Scene>(default, false);
+    static Optional<Scene> loadedRoomScene = new Optional<Scene>(default, false);
 
     public void LoadScene(MonoBehaviour caller, Action onFinishLoading)
     {
@@ -51,7 +51,7 @@ public class Edificio : ScriptableObject
         onFinishLoading?.Invoke();
     }
 
-    public void UnloadScene(MonoBehaviour caller, Action onFinishAction)
+    public static void UnloadScene(MonoBehaviour caller, Action onFinishAction)
     {
         if (loadedRoomScene)
             caller.StartCoroutine(UnloadSceneAsync(onFinishAction));
@@ -59,7 +59,7 @@ public class Edificio : ScriptableObject
             Debug.Log("this edificio was not loaded");
     }
 
-    IEnumerator UnloadSceneAsync(Action onFinishAction)
+    static IEnumerator UnloadSceneAsync(Action onFinishAction)
     {
         bool imageTransitioned = false;
         BlackScreenLoader.FadeToBlack(() => { imageTransitioned = true; });
