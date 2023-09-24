@@ -16,6 +16,7 @@ public class CoroutineHolder : MonoBehaviour
                 return instance.Value;
             }
             instance = new(new GameObject("CoroutineHolder").AddComponent<CoroutineHolder>(), true);
+            DontDestroyOnLoad(instance.Value);
             return instance.Value;
         }
     }

@@ -16,6 +16,7 @@ public class BuyTarget : DragObjectTarget
             return;
         }
         instance = this;
+        HideBuySellInventory();
     }
 
     [SerializeField] private GameObject SellingItemButtonPrefab;
@@ -55,5 +56,10 @@ public class BuyTarget : DragObjectTarget
             si.objetoALaVenta = obj;
             si.precio.text = obj.buyPrice.ToString() + " EUR";
         }
+    }
+
+    public static void HideBuySellInventory()
+    {
+        instance.gameObject.SetActive(false);
     }
 }
