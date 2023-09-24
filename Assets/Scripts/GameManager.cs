@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour
         if (Instance != null)
         {
             Destroy(this);
+            return;
         }
         else
         {
@@ -231,40 +232,42 @@ public class GameManager : MonoBehaviour
 
     public void FalloHurto(float starChase)
     {
-        bool hasFinished = false;
         float leftChase;
         float totalChase = starChase;
-
-        for(int i = 0; i< stars.Count; i++)
+        Debug.Log(stars.Count);
+        for (int i = 0; i< stars.Count; i++)
         {
             if (stars[i].fillAmount < 1f)
             {
                 leftChase = 1f - stars[i].fillAmount;
-                if(leftChase >= totalChase)
+
+                if (leftChase >= totalChase)
                 {
                     stars[i].fillAmount += totalChase;
-                    hasFinished = true;
+                    if (stars[stars.Count - 1].fillAmount >= 0.99f)
+                    {
+                        GameOver();
+                    }
                     return;
                 }
                 else if(leftChase < totalChase)
                 {
                     stars[i].fillAmount = 1f;
                     totalChase -= leftChase;
-                       
-                    if(totalChase<= 0f)
+                    if (stars[stars.Count - 1].fillAmount >= 0.99f)
                     {
-                        hasFinished = true;
+                        GameOver();
+                    }
+                    if (totalChase<= 0f)
+                    {
+                        if (stars[stars.Count - 1].fillAmount >= 0.99f)
+                        {
+                            GameOver();
+                        }
                         return;
                     }
                 }
-            }
-            if(hasFinished)
-            {
-                if (stars[stars.Count].fillAmount >= 1f)
-                {
-                    GameOver();
-                }
-                return;
+
             }
         }
     }
@@ -274,6 +277,7 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         endEvent.Invoke();
+        return;
     }
 
     public void WinGame()

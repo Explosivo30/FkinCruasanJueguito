@@ -26,6 +26,7 @@ public class ShowInventoryManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            return;
         }
         HideInventory();
     }

@@ -48,8 +48,8 @@ public class HurtableButton : MonoBehaviour
             float roll = Random.Range(0f, 100f);
             if (roll > probabilidadDeRobar)//fallo
             {
-                Debug.LogWarning("Not Implemented: robar fallo", this);
-                GameManager.Instance.FalloHurto(0.6f);
+                Debug.LogWarning("Not Implemented: robar fallo", this); 
+                GameManager.Instance.FalloHurto(1.2f);
                 //TODO robar fallo logic
             }
             else//acierto
