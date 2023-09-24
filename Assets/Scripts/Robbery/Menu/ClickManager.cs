@@ -72,20 +72,30 @@ public class ClickManager : MonoBehaviour
 
     public void Entrar()
     {
-        if(robable.requerimientos.Count > 0)
+        if (robable.entered)
         {
-            ShowInventoryManager.ShowInventory();
-            RequirementManager.ShowMenuToDoStuff(robable, CargarEntrada);
+            //TODO show message: ya has robado aqui
         }
         else
         {
-            CargarEntrada();
+            if (robable.requerimientos.Count > 0)
+            {
+                ShowInventoryManager.ShowInventory();
+                RequirementManager.ShowMenuToDoStuff(robable, CargarEntrada);
+                GameManager.Instance.ResetNoise();
+            }
+            else
+            {
+                CargarEntrada();
+            }
         }
     }
     void CargarEntrada()
     {
         //TODO set in game manager current edificio to unload it later
-        robable.edificio.LoadScene(GameManager.Instance, () => { /* set the state here */ });
+        GameManager.Instance.isOnHouse = true;
+        GameManager.Instance.MaxNoise(robable.edificio.maximoRuido);
+        robable.edificio.LoadScene(GameManager.Instance, () => { robable.entered = true; });
     }
 
     public void Comerciar()

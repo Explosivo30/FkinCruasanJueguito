@@ -13,6 +13,7 @@ public class Edificio : ScriptableObject
 {
     [SerializeField] AdditiveLoader loader;
     [SerializeField] GameObject roomPrefab;
+    public float maximoRuido;
 
     static Optional<Scene> loadedRoomScene = new Optional<Scene>(default, false);
 
@@ -79,6 +80,5 @@ public class Edificio : ScriptableObject
             yield return new WaitForEndOfFrame();
         }
         onFinishAction?.Invoke();
-        
     }
 }

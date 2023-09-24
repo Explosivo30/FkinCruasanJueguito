@@ -33,20 +33,32 @@ public class HurtableButton : MonoBehaviour
             Debug.Log("Your inventory Is Full");
             return;
         }
-        float roll = Random.Range(0f, 100f);
-        
-        if(roll > probabilidadDeRobar)//fallo
+
+        GameManager.Instance.ReduceActionPoints(1);
+
+        if (GameManager.Instance.isOnHouse)
         {
-            Debug.LogWarning("Not Implemented: robar fallo", this);
-            GameManager.Instance.FalloHurto(0.6f);
-            //TODO robar fallo logic
-        }
-        else//acierto
-        {
+            GameManager.Instance.AddRuido(objeto.ruido);
             GameManager.Instance.AddToBag(objeto);
-            //TODO DONEadd to inventory
             target.objetos.Remove(objeto);
             Destroy(gameObject);
+        }
+        else
+        {
+            float roll = Random.Range(0f, 100f);
+            if (roll > probabilidadDeRobar)//fallo
+            {
+                Debug.LogWarning("Not Implemented: robar fallo", this);
+                GameManager.Instance.FalloHurto(0.6f);
+                //TODO robar fallo logic
+            }
+            else//acierto
+            {
+                GameManager.Instance.AddToBag(objeto);
+                //TODO DONEadd to inventory
+                target.objetos.Remove(objeto);
+                Destroy(gameObject);
+            }
         }
     }
 }

@@ -33,6 +33,7 @@ public class OriginNode : MonoBehaviour
 
     public static void CreateNPC()
     {
+        if (BaseAgent.ActiveAgents >= BaseAgent.maxAgentsPool) return;
         int ogIndex = Random.Range(0, originNodes.Count - 1);
         GameObject g = NPCPool.Instance.CreateNPC(originNodes[ogIndex].transform);
         NavMeshAgent agent = g.GetComponent<NavMeshAgent>();

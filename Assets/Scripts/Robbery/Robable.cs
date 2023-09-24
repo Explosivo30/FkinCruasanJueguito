@@ -4,6 +4,7 @@ using UnityEngine;
 using Hedenrag.ExVar;
 using Unity.VisualScripting;
 using System.Runtime.Remoting.Messaging;
+using System;
 
 public class Robable : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class Robable : MonoBehaviour
     public List<Peligro> peligros;
 
     public ExtraLayers posibilidades;
+
+    [NonSerialized] public bool entered = false;
 
     Optional<List<string>> infoList = new(null, false);
     [SerializeField] ExtraLayer investigateLayer;
@@ -53,11 +56,6 @@ public class Robable : MonoBehaviour
         }
 
         return infoList.Value.ToArray();
-    }
-
-    public void EntrarCasa()
-    {
-
     }
 
     public void MostrarInfo()

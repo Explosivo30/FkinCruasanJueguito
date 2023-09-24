@@ -6,6 +6,7 @@ public class ExitEdificios : MonoBehaviour
 {
     public void SalirEdificio()
     {
-        Edificio.UnloadScene(CoroutineHolder.Instance, () => { });
+        GameManager.Instance.isOnHouse = false;
+        Edificio.UnloadScene(CoroutineHolder.Instance, () => { GameManager.Instance.ResetNoise(); GameManager.Instance.MaxNoise(999f); });
     }
 }
