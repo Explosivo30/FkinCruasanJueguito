@@ -1,6 +1,9 @@
+using Hedenrag.SceneLoader;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -34,6 +37,10 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] List<Image> stars;
 
+    [SerializeField] UnityEvent endEvent;
+    [SerializeField] UnityEvent winEvent;
+    [SerializeField] UnityEvent nightEvent;
+
     bool isNight = false;
 
     private void Awake()
@@ -58,8 +65,7 @@ public class GameManager : MonoBehaviour
         {
             stars.Add(starsParent.transform.GetChild(i).GetComponent<Image>());
         }
-        DontDestroyOnLoad(this.gameObject);
-        
+        DontDestroyOnLoad(this.gameObject);        
     }
 
     public void RemoveItemInventory(Objeto obj)
@@ -81,14 +87,13 @@ public class GameManager : MonoBehaviour
         //TODO Enter NightMode
         if(!isNight && currentActionPoints < maxActionPoints / 2)
         {
-            
+            nightEvent.Invoke();
         }
 
         if (currentActionPoints <= 0)
         {
             if (isOnHouse == true)
             {
-                ExitHouse();
                 GameOver();
             }
         }
@@ -202,12 +207,6 @@ public class GameManager : MonoBehaviour
         return pesototal;
     }
 
-
-    public void CargarFinalDelJuego()
-    {
-        //Load Scene
-    }
-
     public void FalloHurto(float starChase)
     {
         bool hasFinished = false;
@@ -252,12 +251,12 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        //Load Lose Screen
+        endEvent.Invoke();
     }
 
     public void WinGame()
     {
-        //Load Win Screen
+        winEvent.Invoke();
     }
 
 }
