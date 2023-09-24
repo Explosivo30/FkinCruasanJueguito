@@ -64,4 +64,25 @@ public class ShowInventoryManager : MonoBehaviour
        
         instance.Value.gameObject.SetActive(false);
     }
+
+    public static void ShowAllInventoryHUD()
+    {
+        if (!instance) { return; }
+        HideInventory();
+        instance.Value.gameObject.SetActive(true);
+        List<Objeto> objetosUtiles = GameManager.Instance.AllInventoryReturned();
+
+        foreach (Objeto obj in objetosUtiles)
+        {
+            instance.Value.ContextItems.Add(Instantiate(instance.Value.buttonPrefab, instance.Value.content));
+            InventoryButton inveButt = instance.Value.ContextItems.Last().GetComponent<InventoryButton>();
+            Debug.Log("Objeto instanciado", inveButt);
+            inveButt.objeto = obj;
+            inveButt.sprite.sprite = obj.image;
+            inveButt.nombre.text = obj.name;
+            inveButt.peso.text = obj.peso.ToString() + " Kg";
+            inveButt.precio.text = obj.sellPrice.ToString() + " EUR";
+        }
+    }
+
 }
