@@ -31,8 +31,6 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] List<Objeto> objetos;
 
-    [SerializeField] List<Transform> transformes;
-
     [SerializeField]GameObject starsParent;
 
     [SerializeField] List<Image> stars;

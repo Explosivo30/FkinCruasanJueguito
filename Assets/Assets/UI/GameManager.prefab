@@ -47,13 +47,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b0706906f97fd4ab357a483c026029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isOnHouse: 0
   maxWeight: 50
   maxDays: 0
-  maxMoney: 2000
+  maxMoney: 10000
   maxActionPoints: 100
   maxNoise: 0
   objetos: []
-  transformes: []
   starsParent: {fileID: 0}
   stars: []
   endEvent:
