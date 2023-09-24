@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
     //Singleton
     public static GameManager Instance { get; private set; }
     bool isOnHouse = false;
-
     //Weight
     [SerializeField] int maxWeight;
     public int MaxWeight => maxWeight;
@@ -57,7 +56,7 @@ public class GameManager : MonoBehaviour
         {
             stars.Add(starsParent.transform.GetChild(i).GetComponent<Image>());
         }
-
+        DontDestroyOnLoad(this.gameObject);
         
     }
 
