@@ -21,5 +21,5 @@ MonoBehaviour:
     enabled: 0
     value: []
   ruido: 0
-  probabilidadDeAlarma: 0
+  probabilidadDeAlarma: 34.3
   probabilidadDeRobar: 80.1

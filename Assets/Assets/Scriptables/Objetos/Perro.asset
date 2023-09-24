@@ -20,6 +20,6 @@ MonoBehaviour:
   capacidades:
     enabled: 0
     value: []
-  ruido: 73.9
+  ruido: 83.9
   probabilidadDeAlarma: 18.1
   probabilidadDeRobar: 54.1

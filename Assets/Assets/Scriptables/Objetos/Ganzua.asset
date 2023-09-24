@@ -22,6 +22,6 @@ MonoBehaviour:
     value:
     - {fileID: 11400000, guid: f66a00099a2e04e48aa38bcb4f41e677, type: 2}
     - {fileID: 11400000, guid: 811d15f202bbecd47bc3cf8d42375c2b, type: 2}
-  ruido: 0
-  probabilidadDeAlarma: 0
+  ruido: 40
+  probabilidadDeAlarma: 11.1
   probabilidadDeRobar: 100

@@ -22,5 +22,5 @@ MonoBehaviour:
     value:
     - {fileID: 0}
   ruido: 0
-  probabilidadDeAlarma: 0
-  probabilidadDeRobar: 57.3
+  probabilidadDeAlarma: 41.5
+  probabilidadDeRobar: 74.1

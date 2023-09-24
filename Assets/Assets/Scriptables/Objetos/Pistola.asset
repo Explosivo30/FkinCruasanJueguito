@@ -18,8 +18,11 @@ MonoBehaviour:
   sellAmount: 0
   peso: 1
   capacidades:
-    enabled: 0
-    value: []
-  ruido: 0
-  probabilidadDeAlarma: 0
+    enabled: 1
+    value:
+    - {fileID: 11400000, guid: f66a00099a2e04e48aa38bcb4f41e677, type: 2}
+    - {fileID: 11400000, guid: 811d15f202bbecd47bc3cf8d42375c2b, type: 2}
+    - {fileID: 11400000, guid: 5a49e6e982882ab4ca0eebe8a9799f50, type: 2}
+  ruido: 96.4
+  probabilidadDeAlarma: 30.3
   probabilidadDeRobar: 42.7
