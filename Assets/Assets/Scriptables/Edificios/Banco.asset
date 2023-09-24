@@ -16,4 +16,4 @@ MonoBehaviour:
     asset: {fileID: 102900000, guid: 63b30df87b7d50946836418d83395833, type: 3}
     working: 1
     sceneToLoad: Banco
-  roomPrefab: {fileID: 6143074070646603230, guid: fa4d13f8eaac969449ca7732fbe2f9e3, type: 3}
+  roomPrefab: {fileID: 8709774507513618799, guid: 5c4623fa7e4f1ca43ba53aaad6f66e25, type: 3}

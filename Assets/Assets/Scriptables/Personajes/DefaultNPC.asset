@@ -20,6 +20,16 @@ MonoBehaviour:
     maxVal: 10
   poolDeObjetos:
   - {fileID: 11400000, guid: 277277f423226644f98fbe20f14cc06d, type: 2}
+  - {fileID: 11400000, guid: 5e5f779aac041254faea2caa1bafa8e0, type: 2}
+  - {fileID: 11400000, guid: 8d4c8e9765552b447ac7a4c8ad6d6dd4, type: 2}
+  - {fileID: 11400000, guid: 3d5dea33cfa84e34ea5b1160f1c8f22d, type: 2}
+  - {fileID: 11400000, guid: bf24a9c33a51f5d4cacb86fcacdec8d5, type: 2}
+  - {fileID: 11400000, guid: c8480005c75c45042a466e82fa926c5d, type: 2}
+  - {fileID: 11400000, guid: 561d31b9be688a14386e3eb3dc9e594b, type: 2}
+  - {fileID: 11400000, guid: 8ec266a726b570e4ab305d3c7862e2e2, type: 2}
+  - {fileID: 11400000, guid: a846e2184803cc54bb5e0d822b81fb86, type: 2}
+  - {fileID: 11400000, guid: 656950611607ccd47bbc72a46153eec6, type: 2}
+  - {fileID: 11400000, guid: 427317ddcf271e04497d24a77017c70d, type: 2}
   numeroDePeligros:
     currentVal: 0
     minVal: 0
