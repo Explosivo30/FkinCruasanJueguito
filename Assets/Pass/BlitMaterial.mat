@@ -124,7 +124,7 @@ Material:
     - _PixelDensity: 4
     - _Poseterize: 0
     - _PosterizationCount: 12
-    - _Power: 300
+    - _Power: 150
     - _QueueOffset: 0
     - _Raw: 0
     - _ReceiveShadows: 1

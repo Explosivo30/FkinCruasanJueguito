@@ -16,4 +16,4 @@ MonoBehaviour:
     asset: {fileID: 102900000, guid: d79a07fe7217fc14eb16b7e2cb76f321, type: 3}
     working: 1
     sceneToLoad: habitacion
-  roomPrefab: {fileID: 5203895512588615954, guid: c5e9fda2976a3f54db69832043e36e62, type: 3}
+  roomPrefab: {fileID: 8980719666759456846, guid: 4610881fa0591234eb7922767d844a6c, type: 3}

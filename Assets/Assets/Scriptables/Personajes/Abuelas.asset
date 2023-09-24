@@ -39,6 +39,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bb14530428cda7b43a0c0860e40903cd, type: 2}
   - {fileID: 11400000, guid: bf24a9c33a51f5d4cacb86fcacdec8d5, type: 2}
   - {fileID: 11400000, guid: d829b846794777e4cb6c6e03220da742, type: 2}
+  - {fileID: 11400000, guid: 570ed20628a48af4ca55e6204840f86b, type: 2}
   numeroDePeligros:
     currentVal: 0
     minVal: 0

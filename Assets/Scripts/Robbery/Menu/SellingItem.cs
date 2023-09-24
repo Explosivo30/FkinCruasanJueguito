@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,5 +9,5 @@ public class SellingItem : MonoBehaviour
     [SerializeField] public Image objectImage;
     [SerializeField] public TMPro.TextMeshProUGUI nombre;
     [SerializeField] public TMPro.TextMeshProUGUI precio;
-    [SerializeField] public Objeto objetoALaVenta;
+    [NonSerialized] public Objeto objetoALaVenta;
 }
