@@ -85,5 +85,11 @@ public class ClickManager : MonoBehaviour
         robable.edificio.LoadScene(GameManager.Instance, () => { /* set the state here */ });
     }
 
+    public void Comerciar()
+    {
+        ShowInventoryManager.ShowInventory();
+        //TODO ShowSellManager.ShowSell();
+    }
+
     #endregion
 }
