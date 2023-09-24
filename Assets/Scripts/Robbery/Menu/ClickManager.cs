@@ -46,7 +46,10 @@ public class ClickManager : MonoBehaviour
         MenuDeHurto.instance.HideMenu();
         ShowInventoryManager.HideInventory();
         RequirementManager.HideRequirements();
+        SellTarget.HideBuySellInventory();
     }
+
+    
 
     #region
 

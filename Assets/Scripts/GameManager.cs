@@ -68,6 +68,14 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);        
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ClickManager.SetAllInventoriesInactive();
+        }
+    }
+
     public void RemoveItemInventory(Objeto obj)
     {
         for(int i = 0; i < objetos.Count; i++)
