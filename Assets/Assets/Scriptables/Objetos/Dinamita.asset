@@ -18,8 +18,15 @@ MonoBehaviour:
   sellAmount: 0
   peso: 1
   capacidades:
-    enabled: 0
-    value: []
+    enabled: 1
+    value:
+    - {fileID: 11400000, guid: f66a00099a2e04e48aa38bcb4f41e677, type: 2}
+    - {fileID: 11400000, guid: 811d15f202bbecd47bc3cf8d42375c2b, type: 2}
+    - {fileID: 11400000, guid: 5a49e6e982882ab4ca0eebe8a9799f50, type: 2}
+    - {fileID: 11400000, guid: c912b6b77c4fc504293b195accffba5f, type: 2}
+    - {fileID: 11400000, guid: e49a4997e68f749439fcc863cbd2bf50, type: 2}
+    - {fileID: 11400000, guid: d638ea557d710174e9cca2e98af02170, type: 2}
+    - {fileID: 11400000, guid: 4f12ca1873f5c114bbed1ac585f711da, type: 2}
   ruido: 92.9
   probabilidadDeAlarma: 26.7
   probabilidadDeRobar: 56.7
