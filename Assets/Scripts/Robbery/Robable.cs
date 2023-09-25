@@ -60,11 +60,13 @@ public class Robable : MonoBehaviour
 
     public void MostrarInfo()
     {
+        return;
         if (infoList)
             ListManager.instance.SetList(infoList.Value.ToArray());
     }
     public void OcultarInfo()
     {
+        return;
         ListManager.instance.gameObject.SetActive(false);
     }
 }
