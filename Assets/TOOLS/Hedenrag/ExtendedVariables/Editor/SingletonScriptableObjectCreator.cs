@@ -8,13 +8,13 @@ namespace Hedenrag
     {
         public class SingletonScriptableObjectCreator : SingletonScriptableObject<SingletonScriptableObjectCreator>, ICallOnAll
         {
-
+#if UnityEditor
             [UnityEditor.MenuItem("Hedenrag/Generate Singletons")]
             static void GenerateSingletons()
             {
                 GenerateAllSingletons();
             }
-
+#endif
         }
     }
 }

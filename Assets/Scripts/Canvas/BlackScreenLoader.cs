@@ -17,10 +17,15 @@ public class BlackScreenLoader : MonoBehaviour
 
     private void Awake()
     {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+        }
         instance = this;
         LoaderIcon.gameObject.SetActive(false);
         image.color =new Color32(0,0,0,0);
         image.gameObject.SetActive(false);
+        DontDestroyOnLoad(this);
     }
 
     public static void FadeToBlack(Action OnFinishTrans)

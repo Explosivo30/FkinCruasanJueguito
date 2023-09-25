@@ -8,7 +8,7 @@ public class LoadingCircle : MonoBehaviour
 
     private void Update()
     {
-        transform.Rotate(Vector3.forward * speed * Time.deltaTime);
+        transform.Rotate(Vector3.forward * speed * Time.unscaledDeltaTime);
     }
 
 }
