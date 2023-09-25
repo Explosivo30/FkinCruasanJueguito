@@ -12,14 +12,21 @@ public class MusicaConCrossfade : MonoBehaviour
 
     private void Awake()
     {
+        Debug.Log("Awaking", this);
         foreach(var musica in musicaConCrossfades)
         {
-            musica.StartCoroutine(MusicDown(crossTime));
+            Debug.Log("Eliminando", musica);
+            musica.EliminarMusica(crossTime);
         }
         musicaConCrossfades.Clear();
         DontDestroyOnLoad(gameObject);
         musicaConCrossfades.Add(this);
         StartCoroutine(MusicUp(crossTime));
+    }
+
+    public void EliminarMusica(float crossTime)
+    {
+        StartCoroutine(MusicDown(crossTime));
     }
 
     IEnumerator MusicUp(float time)
