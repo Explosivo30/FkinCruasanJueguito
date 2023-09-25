@@ -3905,8 +3905,7 @@ MonoBehaviour:
     pero no quiero que hagas nada ilegal. Aunque, si decides ir por ese camino te
     doy algunos consejos.\n\nPuedes mover la camara para observar la ciudad con las
     teclas:\n\n\n\n\nTienes acciones limitadas. Puedes:\n\n- Robar, hurtar e investigar
-    a los peatones \nque hay en la calle durante el d\xEDa.\n\n- Investigar durante
-    el d\xEDa los \ndiferentes sitios que hay en la ciudad.\n"
+    a los peatones \nque hay en la calle durante el d\xEDa.\n\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 57228634bd6227245b674f611645d786, type: 2}
   m_sharedMaterial: {fileID: 5839316920724678922, guid: 57228634bd6227245b674f611645d786, type: 2}
