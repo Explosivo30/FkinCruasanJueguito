@@ -10,8 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7406141403536083845}
   - component: {fileID: 31233371313053619}
+  - component: {fileID: 701177809325632445}
   - component: {fileID: 3165039504267986099}
+  - component: {fileID: 7599628756820430507}
   - component: {fileID: 24029308915741753}
+  - component: {fileID: 278279444105208795}
   - component: {fileID: 4535117577256660826}
   m_Layer: 0
   m_Name: GameManager
@@ -59,9 +62,9 @@ MonoBehaviour:
   endEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3165039504267986099}
-        m_TargetAssemblyTypeName: Hedenrag.SceneLoader.SceneLoaderAsync, SceneLoaderAssembly
-        m_MethodName: LoadSceneAsync
+      - m_Target: {fileID: 701177809325632445}
+        m_TargetAssemblyTypeName: BlackScreenFullTransition, Assembly-CSharp
+        m_MethodName: MakeTransition
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -74,9 +77,9 @@ MonoBehaviour:
   winEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 24029308915741753}
-        m_TargetAssemblyTypeName: Hedenrag.SceneLoader.SceneLoaderAsync, SceneLoaderAssembly
-        m_MethodName: LoadSceneAsync
+      - m_Target: {fileID: 7599628756820430507}
+        m_TargetAssemblyTypeName: BlackScreenFullTransition, Assembly-CSharp
+        m_MethodName: MakeTransition
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -89,9 +92,9 @@ MonoBehaviour:
   nightEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4535117577256660826}
-        m_TargetAssemblyTypeName: Hedenrag.SceneLoader.SceneLoaderAsync, SceneLoaderAssembly
-        m_MethodName: LoadSceneAsync
+      - m_Target: {fileID: 278279444105208795}
+        m_TargetAssemblyTypeName: BlackScreenFullTransition, Assembly-CSharp
+        m_MethodName: MakeTransition
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -101,6 +104,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &701177809325632445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4870399938106770846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130a138bd603e054982e70a24d5830ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sceneLoader: {fileID: 3165039504267986099}
 --- !u!114 &3165039504267986099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,6 +131,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneAssets: {fileID: 102900000, guid: 1089fbeb8c80a2345baa6324d004aed1, type: 3}
   sceneName: EndGame
+--- !u!114 &7599628756820430507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4870399938106770846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130a138bd603e054982e70a24d5830ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sceneLoader: {fileID: 24029308915741753}
 --- !u!114 &24029308915741753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,6 +158,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneAssets: {fileID: 102900000, guid: d4f947ecb0441c148bec4365eb57f043, type: 3}
   sceneName: WinGame
+--- !u!114 &278279444105208795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4870399938106770846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130a138bd603e054982e70a24d5830ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sceneLoader: {fileID: 4535117577256660826}
 --- !u!114 &4535117577256660826
 MonoBehaviour:
   m_ObjectHideFlags: 0
