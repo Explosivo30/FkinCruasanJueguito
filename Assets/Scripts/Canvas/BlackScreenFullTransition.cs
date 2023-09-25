@@ -12,6 +12,6 @@ public class BlackScreenFullTransition : MonoBehaviour
     {
         DontDestroyOnLoad(_sceneLoader);
         Time.timeScale = 0f;
-        BlackScreenLoader.FadeToBlack(() => { _sceneLoader.LoadScene(() => { BlackScreenLoader.FadeToInvisible(() => { Destroy(_sceneLoader); Time.timeScale = 1f; }); }); });
+        BlackScreenLoader.FadeToBlack(() => { _sceneLoader.LoadScene(() => { BlackScreenLoader.FadeToInvisible(() => { Time.timeScale = 1f; Destroy(_sceneLoader); }); }); });
     }
 }

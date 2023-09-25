@@ -18,7 +18,6 @@ public class OriginNode : MonoBehaviour
     {
         myId = originNodes.Count;
         originNodes.Add(this);
-
         if (!og)
         {
             CoroutineWait.DoAfterSeconds(action: RepeatInvokeCreateNPCs, time: spawnRate);
