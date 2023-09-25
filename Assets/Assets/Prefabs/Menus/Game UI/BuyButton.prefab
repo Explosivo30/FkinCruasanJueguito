@@ -358,6 +358,8 @@ GameObject:
   - component: {fileID: 2625214258523652849}
   - component: {fileID: 2078893466198952869}
   - component: {fileID: -8800119875283792658}
+  - component: {fileID: 5795648237041882699}
+  - component: {fileID: 5283803553454656997}
   m_Layer: 5
   m_Name: BuyButton
   m_TagString: Untagged
@@ -468,7 +470,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6475452024649343802}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5795648237041882699}
+        m_TargetAssemblyTypeName: SoundCaller, Assembly-CSharp
+        m_MethodName: CallSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2625214258523652849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,3 +526,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentAfterDrag: {fileID: 0}
   image: {fileID: 0}
+--- !u!114 &5795648237041882699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8732361981361002107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e9c2aa921c82ec47b659b47d7c7834f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 12918227451b85a458db465f951f9fe0, type: 3}
+  volume: 0.5
+  randomvolume: 0.05
+  pitch: 1
+  randomPitch: 0.05
+  soundObject: {fileID: 6849072679435939721, guid: 39c03ee405bd98749afc08019c54d09d, type: 3}
+--- !u!114 &5283803553454656997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8732361981361002107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5795648237041882699}
+          m_TargetAssemblyTypeName: SoundCaller, Assembly-CSharp
+          m_MethodName: CallSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
