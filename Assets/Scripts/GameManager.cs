@@ -277,12 +277,16 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         endEvent.Invoke();
+        Destroy(gameObject);
+        Destroy(starsParent.transform.root.gameObject);
         return;
     }
 
     public void WinGame()
     {
         winEvent.Invoke();
+        Destroy(gameObject);
+        Destroy(starsParent.transform.root.gameObject);
     }
 
 }
