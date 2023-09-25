@@ -17,6 +17,7 @@ public class MusicaConCrossfade : MonoBehaviour
             musica.StartCoroutine(MusicDown(crossTime));
         }
         musicaConCrossfades.Clear();
+        DontDestroyOnLoad(gameObject);
         musicaConCrossfades.Add(this);
         StartCoroutine(MusicUp(crossTime));
     }
@@ -24,9 +25,10 @@ public class MusicaConCrossfade : MonoBehaviour
     IEnumerator MusicUp(float time)
     {
         musicaSource.volume = 0f;
-        for (float volume = 0f; volume <= 1f; volume += Time.unscaledDeltaTime * time)
+        while(musicaSource.volume <= 0.99f)
         {
-            musicaSource.volume = Mathf.Clamp01(volume);
+            Debug.Log("subiendoSonido: " + musicaSource.volume, this);
+            musicaSource.volume += Time.unscaledDeltaTime/time;
             yield return new WaitForEndOfFrame();
         }
     }
@@ -34,10 +36,12 @@ public class MusicaConCrossfade : MonoBehaviour
     IEnumerator MusicDown(float time)
     {
         time *= musicaSource.volume;
-        for (float volume = musicaSource.volume; volume >= 0f; volume -= Time.unscaledDeltaTime * time)
+        while (musicaSource.volume >= 0.01f)
         {
-            musicaSource.volume = Mathf.Clamp01(volume);
+            Debug.Log("bajandoSonido: " + musicaSource.volume, this);
+            musicaSource.volume -= Time.unscaledDeltaTime / time;
             yield return new WaitForEndOfFrame();
         }
+        Destroy(gameObject);
     }
 }
