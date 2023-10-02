@@ -8,14 +8,12 @@ public class MusicaConCrossfade : MonoBehaviour
 
     [SerializeField] AudioSource musicaSource;
 
-    [SerializeField] float crossTime = 1f;
+    [SerializeField, Range(0.05f,10f)] float crossTime = 1f;
 
     private void Awake()
     {
-        Debug.Log("Awaking", this);
         foreach(var musica in musicaConCrossfades)
         {
-            Debug.Log("Eliminando", musica);
             musica.EliminarMusica(crossTime);
         }
         musicaConCrossfades.Clear();
@@ -34,7 +32,6 @@ public class MusicaConCrossfade : MonoBehaviour
         musicaSource.volume = 0f;
         while(musicaSource.volume <= 0.99f)
         {
-            Debug.Log("subiendoSonido: " + musicaSource.volume, this);
             musicaSource.volume += Time.unscaledDeltaTime/time;
             yield return new WaitForEndOfFrame();
         }
@@ -45,7 +42,6 @@ public class MusicaConCrossfade : MonoBehaviour
         time *= musicaSource.volume;
         while (musicaSource.volume >= 0.01f)
         {
-            Debug.Log("bajandoSonido: " + musicaSource.volume, this);
             musicaSource.volume -= Time.unscaledDeltaTime / time;
             yield return new WaitForEndOfFrame();
         }

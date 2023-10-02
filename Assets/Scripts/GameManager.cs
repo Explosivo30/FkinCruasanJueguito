@@ -92,7 +92,7 @@ public class GameManager : MonoBehaviour
         currentActionPoints -= reductionPoints;
 
         //TODO Enter NightMode
-        if(!isNight && currentActionPoints < maxActionPoints / 2)
+        if(!isNight && currentActionPoints == maxActionPoints / 2)
         {
             nightEvent.Invoke();
         }

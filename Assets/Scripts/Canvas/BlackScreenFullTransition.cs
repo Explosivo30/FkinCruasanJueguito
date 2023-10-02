@@ -4,7 +4,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(SceneLoaderAsync))]
 public class BlackScreenFullTransition : MonoBehaviour
 {
     [SerializeField] SceneLoaderAsync _sceneLoader;
